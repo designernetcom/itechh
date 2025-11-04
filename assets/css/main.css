@@ -7967,7 +7967,9 @@ Animate wobble-vertical
   padding: 70px;
 }
 .small-container .image img {
-  width: 100% !important;
+    width: 100% !important;
+    height: 100%;
+    max-width: 120%;
 }
 .choose-section {
   padding-bottom: 50px;
