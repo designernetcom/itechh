@@ -197,7 +197,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 10px;
-  line-height: 22px;
+  line-height: 35px;
 }
 
 a {
@@ -931,10 +931,10 @@ figure {
   position: relative;
   color: var(--theme-color);
   font-family: var(--primary-font);
-  font-size: 16px;
+  font-size: 26px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 28px;
+  font-weight: 700;
+  line-height: 70px;
   text-transform: uppercase;
   /* margin-left: 45px; */
 }
@@ -965,8 +965,8 @@ figure {
 /*----------------------------------------*/
 
 .section-space {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-space {
@@ -4145,10 +4145,10 @@ p.banner-text {
 /*  BRAND CSS START
 /*----------------------------------------*/
 
-.brand-section img {
-  /* filter: grayscale(1); */
+/* .brand-section img {
+  filter: grayscale(1);
   opacity: 0.75;
-}
+} */
 
 .brand-section img:hover {
   filter: grayscale(0);
@@ -7893,6 +7893,7 @@ Animate wobble-vertical
 }
 .image-1 img {
   width: 100%;
+  margin-top: 130px;
 }
 .footer-widget-1 p {
   text-align: justify;

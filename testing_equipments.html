@@ -309,637 +309,337 @@
     </header>
     <!-- Header area end -->
 
+
+
+
     <main>
-      <!-- Breadcrumb area start -->
-      <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
+
+        <!-- Breadcrumb area start -->
+        <section class="breadcrumb__area breadcrumb-height include-bg d-flex align-items-center">
+            <div class="large-container">
+            <div class="row">
+                <div class="col-xxl-12">
+                <div class="breadcrumb__content text-center">
+                    <h2 class="breadcrumb__title" style="color: #ffffff;">Testing Equipment's</h2>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Breadcrumb area end -->
+
+
+            <section class="about-us-section section-space p-relative">
         <div class="small-container">
-          <div class="row justify-content-center">
-            <div class="col-xxl-12">
-              <div class="breadcrumb__wrapper p-relative">
-                <h2 class="breadcrumb__title">About Us</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Breadcrumb area end -->
-
-
-      <style>
-:root {
-  --bg: linear-gradient(135deg, #eef2ff, #f9f9ff);
-  --card-bg: rgba(255, 255, 255, 0.65);
-  --border: rgba(255, 255, 255, 0.3);
-  --accent: #4f46e5;
-  --shadow: 0 10px 25px rgba(79, 70, 229, 0.15);
-  --radius: 18px;
-  font-family: "Poppins", sans-serif;
-}
-
-
-.directors-section {
-  max-width: 1100px;
-  margin: 0px auto;
-  margin-bottom: 30px;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.section-header h2 {
-  font-size: 32px;
-  color: #111827;
-  margin-bottom: 8px;
-  margin-top: 30px;
-}
-
-.section-header p {
-  color: #6b7280;
-  font-size: 15px;
-  margin-bottom: 50px;
-}
-
-/* Grid */
-.directors-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
-}
-
-/* Card */
-.director-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(10px);
-  padding: 30px 20px 25px;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-/* .director-card::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-    background: conic-gradient(from 180deg at 50% 50%, rgb(255 0 0 / 42%), transparent 30%);
-  animation: spin 6s linear infinite;
-  z-index: 0;
-} */
-
-.director-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(120deg, #a3a3a3, #d5f9c4, #a3a2a2, #b0b0b0);
-  background-size: 300% 300%;
-  border-radius: var(--radius);
-  animation: gradientFlow 8s ease infinite;
-  z-index: 0;
-  opacity: 0.25;
-}
-
-@keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-
-/* @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-.director-inner {
-  position: relative;
-  z-index: 1;
-}
-
-/* Avatar */
-.avatar {
-  width: 110px;
-  height: 110px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid #fff;
-  box-shadow: 0 5px 20px rgba(79, 70, 229, 0.2);
-}
-
-.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Info */
-.director-name {
-  font-size: 20px;
-  font-weight: 700;
-  color: #1e1e2f;
-  margin-bottom: 5px;
-}
-
-.director-role {
-  color: #f90401;
-  font-size: 14px;
-  margin-bottom: 14px;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-}
-
-.director-bio {
-  font-size: 14px;
-  color: #374151;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-.director-meta {
-  font-size: 13px;
-  color: #4b5563;
-}
-
-.email-link {
-  color: #f90401;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.director-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(79, 70, 229, 0.25);
-}
-</style>
-
-<section class="directors-section">
-  <div class="section-header">
-    <h2>Our Directors</h2>
-    <p>Meet the visionaries shaping our organization’s success.</p>
-  </div>
-
-  <div class="directors-grid">
-    <!-- Director 1 -->
-    <div class="director-card">
-      <div class="director-inner">
-        <div class="avatar">
-          <img src="assets/imgs/avinash-nagarkar.png" alt="Avinash Nagarkar">
-        </div>
-        <h3 class="director-name">Mr. Avinash Nagarkar</h3>
-        <div class="director-role">Managing Director</div>
-        <!-- <p class="director-bio">
-          Under the visionary leadership of Mr. Avinash Nagarkar and Mr. Mukund Sonawane,
-          the company has grown steadily — combining modern infrastructure with a skilled
-          workforce to meet diverse industrial needs.
-        </p> -->
-        <div class="director-meta">
-          <a href="mailto:avinash.Nagarkar@i-tech.org.in" class="email-link">avinash.Nagarkar@i-tech.org.in</a>
-          <!-- <br/> -->
-          <!-- +91 00000 00000 -->
-        </div>
-      </div>
-    </div>
-
-    <!-- Director 2 -->
-    <div class="director-card">
-      <div class="director-inner">
-        <div class="avatar">
-          <img src="assets/imgs/mukund-sonawane.png" alt="Mukund Sonawane">
-        </div>
-        <h3 class="director-name">Mr. Mukund Sonawane</h3>
-        <div class="director-role">Director — Operations</div>
-        <!-- <p class="director-bio">
-          Under the visionary leadership of Mr. Avinash Nagarkar and Mr. Mukund Sonawane,
-          the company has grown steadily — combining modern infrastructure with a skilled
-          workforce to meet diverse industrial needs.
-        </p> -->
-        <div class="director-meta">
-          <a href="mailto:mukund.sonawane@i-tech.org.in" class="email-link">mukund.sonawane@i-tech.org.in</a>
-          <!-- <br />
-          +91 00000 00000 -->
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<style>
-  .about-us-section {
-  background: #fff;
-  padding: 40px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.section-sub-title {
-  /* color: #d11a7d; */
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.section-title {
-  font-size: 28px;
-  font-weight: 700;
-  color: #222;
-}
-
-.about-list ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.about-list ul li {
-  margin-bottom: 12px;
-  position: relative;
-  padding-left: 25px;
-  color: #555;
-  line-height: 1.7;
-}
-
-.about-list ul li::before {
-  content: "✔";
-  color: #f90401;
-  position: absolute;
-  left: 0;
-  top: 2px;
-  font-size: 16px;
-}
-
-.about-us-image-area {
-  text-align: center;
-  position: relative;
-}
-
-.about-us-image-area img {
-  max-width: 100%;
-  border-radius: 12px;
-  transition: transform 0.5s ease;
-}
-
-.about-us-image-area:hover img {
-  transform: scale(1.03);
-}
-
-.info-badge {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-  background: #fff;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  border-radius: 12px;
-  animation: floatY 3s ease-in-out infinite;
-}
-
-.info-badge .inner {
-  padding: 15px;
-}
-
-@keyframes floatY {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-.about-bottom-box {
-  /* background: #f9f9f9; */
-  /* border-left: 5px solid #f90401; */
-  transition: all 0.3s ease-in-out;
-  margin-top: 0px;
-}
-.about-bottom-box:hover {
-  background: #fff;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  transform: translateY(-3px);
-}
-.about-bottom-box ul li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-</style>
-
-      <!-- About us area start -->
-<!-- ================= About Us Section ================= -->
-<section class="about-us-section section-space p-relative">
-  <div class="small-container">
-    <div class="row g-4 align-items-center">
-      <!-- ===== Left Content Area ===== -->
-      <!-- <div class="col-xxl-6 col-xl-6 col-lg-6"> -->
-        <div class="">
-        <div class="about-us-content-area p-relative z-1 pl-30">
-          <div class="title-box mb-35 wow fadeInLeft" data-wow-delay=".3s">
-            <!-- <span class="section-sub-title">About Us</span> -->
-            <h3 class="section-title mt-10">
-              Innovating Technology for a Smarter Future
-            </h3>
-          </div>
-
-          <p style="text-align: justify;">
-            Founded in <strong>2016</strong>, <strong>I-Tech Industries India Pvt. Ltd.</strong> has been driven by a passion for
-            innovation and excellence in manufacturing. Guided by our philosophy —
-            <em>“Innovating technology for you...”</em> — we began our journey in the
-            <strong>refrigeration industry</strong>, delivering high-precision tools and
-            SPMs that meet global quality standards.
-          </p>
-
-          <p style="text-align: justify;">
-            With a strong foundation built on technology, skill, and dedication, I-Tech
-            expanded its horizons beyond refrigeration. Today, we proudly serve leading
-            companies in the <strong>automobile</strong>, <strong>electrical</strong>, and
-            <strong>toy</strong> industries, offering comprehensive design, development, and
-            manufacturing solutions.
-          </p>
-
-          <p style="text-align: justify;">
-            Under the visionary leadership of <strong>Mr. Avinash Nagarkar</strong> and
-            <strong>Mr. Mukund Sonawane</strong>, the company continues to grow steadily —
-            combining advanced infrastructure with a skilled workforce to meet
-            diverse industrial requirements.
-          </p>
-        </div>
-      </div>
-
-      <!-- ===== Right Image Area ===== -->
-      <!-- <div class="col-xxl-6 col-xl-6 col-lg-6">
-        <div class="about-us-image-area p-relative wow fadeInRight" data-wow-delay=".4s">
-          <figure class="image-1">
-            <img
-              src="assets/imgs/about-us.jpg"
-              alt="About I-Tech Industries"
-              class="img-fluid rounded-3 shadow-lg"
-            />
-          </figure>
-
-        
-          <div class="info-badge float-bob-y">
-            <div class="inner text-center p-3 rounded-3">
-              <i class="icon-prize" style="font-size: 30px; color: #d11a7d;"></i>
-              <h4><span class="counter">9</span>+ Years</h4>
-              <p>of Excellence & Innovation</p>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- ===== End Image Area ===== -->
-    </div>
-
-    <!-- ===== Sister Companies & Commitment Section ===== -->
-    <div class="about-bottom-box mt-60 p-4 rounded-4 shadow-sm wow fadeInUp" data-wow-delay=".5s">
-      <p style="color: #595959; text-align: justify;">
-        To enhance our manufacturing strength and provide complete end-to-end solutions, we have expanded our operations with two dedicated sister companies:
-      </p>
-
-      <ul class="list-area mb-4" style="color: #595959; list-style: disc; padding-left: 20px;">
-        <li>
-          <strong>i-Tech Components</strong> (est. 2022): Focused on the
-          <strong>production of precision plastic components</strong>, leveraging advanced moulding technologies to ensure accuracy and durability.
-        </li>
-        <li>
-          <strong>i-Tech Pressing</strong> (est. 2025): Dedicated to
-          <strong>sheet metal part manufacturing</strong>, equipped with state-of-the-art press tools and modern machinery for high-performance results.
-        </li>
-      </ul>
-
-      <p style="text-align: justify;">
-        At <strong>I-Tech Industries India Pvt. Ltd.</strong>, our commitment lies in
-        <strong>continuous improvement, customer satisfaction,</strong> and
-        <strong>sustainable growth</strong>. We strive to deliver
-        <strong>innovative, high-quality, and cost-efficient</strong> manufacturing
-        solutions that empower our clients to excel in a competitive global market.
-      </p>
-
-      <p style="text-align: justify;">
-        With a steadfast focus on <strong>technological advancement and excellence</strong>,
-        we continue to grow as a <strong>reliable and trusted partner</strong> in
-        precision engineering and modern manufacturing.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Custom Styling ===== -->
-
-<!-- ================= End About Us Section ================= -->
-
-<!-- ================= End About Us Section ================= -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- About us area end -->
-
-      <!-- Choose area start -->
-<section class="vision-mission-section section-space-top p-relative">
-  <div class="shape-image" data-background="assets/imgs/shapes/shape-15.png"></div>
-  <div class="small-container">
-    <div class="row align-items-center g-5">
-
-      <!-- Left Column: Section Title -->
-      <div class="col-lg-5 wow fadeInLeft" data-wow-delay=".4s">
-        <div class="title-box">
-          <!-- <span class="section-sub-title">About Us</span> -->
-          <h3 class="section-title mt-10">Our Vision & Mission</h3>
-          <p class="mt-20">
-            We aim to redefine excellence in plastic component manufacturing through innovation, precision, and customer commitment.
-          </p>
-        </div>
-      </div>
-
-      <!-- Right Column: Vision & Mission Cards -->
-      <div class="col-lg-7 wow fadeInRight" data-wow-delay=".6s">
-        <div class="vision-mission-wrapper">
-
-          <!-- Mission Block -->
-          <div class="vm-box">
-            <div class="vm-icon">
-              <i class="icon-target"></i>
-            </div>
-            <div class="vm-content">
-              <h5>Our Mission</h5>
-              <p style="text-align: justify;">
-                At I-Tech Industries India Pvt. Ltd., we aim to transform ideas into reliable, high-quality products through innovation, technology, and skilled expertise.
-                <br>
-                We are committed to excellence, customer satisfaction, and sustainable growth while continually enhancing our capabilities to meet the evolving needs of modern industry.
-              </p>
-            </div>
-          </div>
-
-          <!-- Vision Block -->
-          <div class="vm-box">
-            <div class="vm-icon">
-              <i class="icon-help"></i>
-            </div>
-            <div class="vm-content">
-              <h5>Our Vision</h5>
-              <p style="text-align: justify;">
-                To be a global leader in precision engineering and manufacturing, delivering innovative and sustainable solutions that empower industries and build lasting trust.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<style>
-  .vision-mission-section {
-  background-color: #f9fafc;
-  position: relative;
-  padding: 80px 0;
-}
-
-.vision-mission-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.vm-box {
-  display: flex;
-  align-items: flex-start;
-  background: #fff;
-  border-radius: 12px;
-  padding: 25px 30px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-}
-
-.vm-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-.vm-icon {
-  font-size: 38px;
-  color: #f90401;
-  margin-right: 20px;
-}
-
-.vm-content h5 {
-  font-size: 20px;
-  margin-bottom: 8px;
-  font-weight: 700;
-  color: #222;
-}
-
-.vm-content p {
-  color: #555;
-  line-height: 1.6;
-}
-
-.section-sub-title {
-  color: #f90401;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.section-title {
-  font-size: 32px;
-  font-weight: 800;
-  color: #111;
-}
-
-</style>
-      <!-- Choose area end -->
-
-      <!-- Work process area start -->
-      <!-- <section
-        class="work-process-section section-space p-relative"
-        data-background="assets/imgs/bg/process-bg.png"
-      >
-        <div class="shape-1" data-background="assets/imgs/bg/line.png"></div>
-        <div class="small-container">
-          <div
-            class="title-box text-center mb-60 wow fadeInLeft"
-            data-wow-delay=".5s"
-          >
-            <span class="section-sub-title">Working Process</span>
-            <h3 class="section-title mt-10">Standard Work Process</h3>
-          </div>
           <div class="row g-4">
-            <div class="col-xxl-4 col-xl-4 col-lg-4">
-              <div class="work-process-box text-center">
-                <div class="icon-box p-relative">
-                  <i class="icon-dollar-tag"></i>
-                  <span>1</span>
+            <!-- <div class="col-xxl-6 col-xl-6 col-lg-6"> -->
+              <div class="">
+              <!-- .content start -->
+              <div
+                class="about-us-content-area about-2-content-area p-relative z-1 pl-30"
+              >
+                <div class="title-box mb-35 wow fadeInLeft"data-wow-delay=".5s" style="text-align: center;">
+                  <span class="section-sub-title">Refrigerator Door Reliability Testing SPM</span>
+                  <!-- <h3 class="section-title mt-10">
+                    Devoted to Delivering Top Notch Roofing Solutions
+                  </h3> -->
                 </div>
-                <div class="content">
-                  <h4 class="pt-25 pb-25">Design & Development</h4>
-                  <p>
-                    We collaborate with clients to understand their requirements
-                    and create precise 3D designs and tool designs using
-                    advanced CAD/CAM software.
+                <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
+               The <strong>Refrigerator Door Reliability Testing SPM</strong> is a fully automated testing system designed to evaluate the endurance and performance of refrigerator doors under repetitive operating conditions. This machine replicates real-life door usage cycles to ensure product durability, hinge performance, and latch integrity.
+                </p>
+                <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
+                Equipped with a <strong>pneumatic actuation system</strong>, the SPM performs precise <strong>door open and close operations</strong> with adjustable force and angle, simulating long-term usage patterns. The system offers <strong>variable cycle time settings</strong>, allowing users to customize test parameters as per different product models or testing standards.
+                  </p> 
+
+                  <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
+                    All operational parameters, including cycle count, speed, and test duration, are continuously <strong>monitored and recorded</strong>. The system provides <strong>real-time data visualization</strong> on an HMI interface and allows easy <strong>data export in Excel format</strong> for analysis and reporting.
                   </p>
+                  <section class="technical-section">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Side: Content -->
+      <div class="col-xxl-6 col-xl-6 col-lg-6">
+        <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify; font-weight: bold;">
+          Technical Highlights:
+        </p>
+
+        <ul class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
+          <li><strong>Pneumatic door actuation system</strong> for accurate open–close motion</li>
+          <li><strong>Adjustable cycle time</strong> to suit various testing requirements</li>
+          <li><strong>Real-time monitoring</strong> of cycle count, pressure, and status</li>
+          <li><strong>Data logging and export</strong> capability in Excel format for detailed analysis</li>
+          <li><strong>User-friendly HMI interface</strong> for easy control and parameter setting</li>
+          <li><strong>Heavy-duty structure</strong> for stable and vibration-free operation</li>
+          <li>Designed to meet <strong>OEM reliability and endurance testing standards</strong></li>
+        </ul>
+      </div>
+
+      <!-- Right Side: Image -->
+      <div class="col-xxl-6 col-xl-6 col-lg-6 wow fadeInRight" data-wow-delay=".8s" style="text-align:center;">
+        <img src="assets/imgs/Testing-1.png" alt="Technical Highlights" class="img-fluid" style="max-width: 70%; border-radius: 10px;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+              </div>
+              <!-- .content end -->
+            </div>
+            <!-- <div class="col-xxl-6 col-xl-6 col-lg-6"> -->
+              <!-- image area start -->
+              <!-- <div
+                class="about-us-image-area p-relative wow fadeInRight"
+                data-wow-delay=".5s"
+              > -->
+                <!-- <div
+                  class="border-shape"
+                  data-background="assets/imgs/shapes/shape-6.png"
+                ></div> -->
+                <!-- <figure class="image-1">
+                  <img src="assets/imgs/Testing-1.png" alt="" />
+                </figure>  -->
+               <!-- <div class="image-2-area">
+                  <div class="image-2 p-relative">
+                    <img src="assets/imgs/about/about-2.jpg" alt="" />
+                    <div class="play-btn">
+                      <div class="video_player_btn">
+                        <a
+                          href="https://www.youtube.com/watch?v=eEzD-Y97ges"
+                          class="popup-video"
+                          ><i class="icon-play"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="working-area float-bob-y">
+                  <div class="inner p-relative">
+                    <div class="icon-box">
+                      <i class="icon-prize"></i>
+                      <h4><span class="counter">25</span> Years</h4>
+                      <p>Working Experience</p>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+              <!-- image area end -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+<style>
+.technical-section {
+    padding: 5px 0;
+    /* padding-left: 0px; */
+    margin-left: -15px;
+}
+
+.technical-section ul li {
+  margin-bottom: 8px;
+}
+
+</style>
+
+
+<style>
+
+.mb-35 li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  /* font-weight: 500; */
+  color: #595959;
+  text-align: justify;
+}
+
+.mb-35 li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f90401;
+  font-weight: bold;
+}
+
+</style>
+
+
+            <section class="about-us-section section-space p-relative">
+        <div class="small-container">
+          <div class="row g-4">
+            <!-- <div class="col-xxl-6 col-xl-6 col-lg-6"> -->
+              <div class="">
+              <!-- .content start -->
+              <div
+                class="about-us-content-area about-2-content-area p-relative z-1 pl-30"
+              >
+                <div class="title-box mb-35 wow fadeInLeft"data-wow-delay=".5s" style="text-align: center;">
+                  <span class="section-sub-title">Refrigerator Drop Testing SPM</span>
+                  <!-- <h3 class="section-title mt-10">
+                    Devoted to Delivering Top Notch Roofing Solutions
+                  </h3> -->
+                </div>
+                <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
+               The <strong>Refrigerator Drop Testing SPM</strong> is a specialized automated system designed to evaluate the structural strength, rigidity, and durability of refrigerator assemblies during simulated handling and transportation conditions. This machine ensures that the product can withstand real-world impact forces without deformation or damage.
+                </p>
+                <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
+               The SPM operates through a <strong>pneumatic lifting and dropping mechanism</strong> that allows precise control over <strong>drop height, frequency, and impact force</strong>. It enables users to conduct repetitive drop tests under controlled parameters to assess product design robustness and packaging effectiveness.
+                  </p> 
+
+                  <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
+                    Equipped with an advanced <strong>HMI-based control system</strong>, the machine allows easy setting of variable test parameters and continuous <strong>monitoring of cycle count and drop data</strong>. All recorded data can be easily <strong>exported in Excel format</strong> for detailed analysis and reporting.
+                  </p>
+                  
+                  <section class="technical-section">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Side: Content -->
+      <div class="col-xxl-6 col-xl-6 col-lg-6">
+        <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify; font-weight: bold;">
+          Technical Highlights:
+        </p>
+
+                  <ul class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
+                    <li><strong>Pneumatic lifting and drop mechanism</strong> for controlled and repeatable testing</li>
+                    <li><strong>Adjustable drop height and cycle count</strong> to meet various test standards</li>
+                    <li><strong>Real-time monitoring</strong> of impact data and test progress via HMI</li>
+                    <li><strong>Data logging and export</strong> facility in Excel for performance evaluation</li>
+                    <li><strong>Robust machine structure</strong> to ensure accuracy and stability during operation</li>
+                    <li><strong>User-friendly touch-screen interface</strong> for easy operation and parameter setup</li>
+                    <li>Designed in compliance with <strong>refrigerator reliability and packaging test standards</strong></li>
+                  </ul>
+     
+              </div>
+                    <!-- Right Side: Image -->
+      <div class="col-xxl-6 col-xl-6 col-lg-6 wow fadeInRight" data-wow-delay=".8s" style="text-align:center;">
+        <img src="assets/imgs/Testing-2.png" alt="Technical Highlights" class="img-fluid" style="max-width: 70%; border-radius: 10px;">
+      </div>
+              <!-- .content end -->
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6">
+              <!-- image area start -->
+              <div class="about-us-image-area p-relative wow fadeInRight"data-wow-delay=".5s">
+                
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="service-slider-section section-space p-relative product-slider">
+        <div class="small-container">
+          <div class="row">
+            <div class="col-xxl-12">
+              <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
+                <h3 class="section-title mt-10">
+                  Cabinet Thermoforming Moulds
+                </h3>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper service-active-1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="service-slider-area p-relative">
+                  <figure class="image w-img">
+                    <img
+                      src="assets/imgs/products/door-foaming-jigs.jpg"
+                      alt=""
+                    />
+                  </figure>
+
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="service-slider-area p-relative">
+                  <figure class="image w-img">
+                    <img
+                      src="assets/imgs/products/door-foaming-jigs1.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-slider-area p-relative">
+                  <figure class="image w-img">
+                    <img
+                      src="assets/imgs/products/door-foaming-jigs2.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-slider-area p-relative">
+                  <figure class="image w-img">
+                    <img
+                      src="assets/imgs/products/door-foaming-jigs3.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-slider-area p-relative">
+                  <figure class="image w-img">
+                    <img
+                      src="assets/imgs/products/door-foaming-jigs4.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-slider-area p-relative">
+                  <figure class="image w-img">
+                    <img
+                      src="assets/imgs/products/door-foaming-jigs5.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-slider-area p-relative">
+                  <figure class="image w-img">
+                    <img
+                      src="assets/imgs/products/door-foaming-jigs6.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-slider-area p-relative">
+                  <figure class="image w-img">
+                    <img
+                      src="assets/imgs/products/door-foaming-jigs7.jpg"
+                      alt=""
+                    />
+                  </figure>
                 </div>
               </div>
             </div>
- 
-            <div class="col-xxl-4 col-xl-4 col-lg-4">
-              <div class="work-process-box text-center">
-                <div class="icon-box p-relative">
-                  <i class="icon-engineer"></i>
-                  <span>2</span>
-                </div>
-                <div class="content">
-                  <h4 class="pt-25 pb-25">Tooling & Production</h4>
-                  <p>
-                    Using our state-of-the-art tool room and injection moulding
-                    facilities, we manufacture high-quality plastic parts with
-                    strict quality control at every stage.
-                  </p>
-                </div>
-              </div>
-            </div>
-        
-            <div class="col-xxl-4 col-xl-4 col-lg-4">
-              <div class="work-process-box text-center">
-                <div class="icon-box p-relative">
-                  <i class="icon-home"></i>
-                  <span>3</span>
-                </div>
-                <div class="content">
-                  <h4 class="pt-25 pb-25">Quality Assurance & Delivery</h4>
-                  <p>
-                    Each component undergoes thorough inspection and testing to
-                    ensure durability and accuracy, followed by on-time delivery
-                    as per client schedule.
-                  </p>
-                </div>
-              </div>
-            </div>
-  
           </div>
         </div>
       </section> -->
-      <!-- Work process area end -->
-    </main>
 
-    <!-- Footer area start -->
+
+
+
+
+
+    </main>
+            <!-- Footer area start -->
     <footer>
       <div class="footer-main bg-color-1 p-relative">
 <div class="footer-top section-space-medium">
