@@ -629,7 +629,7 @@
   </div>
 
 
-<div class="tools-container">
+<!-- <div class="tools-container">
   <div class="tool-box">
     <h2>Press Machine</h2>
     <div class="tool-img-grid">
@@ -655,9 +655,210 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 </section>
+
+<!-- ===== Two-image responsive equipment section ===== -->
+<section class="equip-section section-space">
+  <div class="equip-container">
+    <div class="equip-grid">
+      <!-- Card 1 -->
+       
+      <article class="equip-card">
+        <h2>Press Machine</h2>
+        <div class="equip-image-box">
+          <img src="assets/imgs/Sew-Press-Machine.png" alt="Sew Press Machine" />
+        </div>
+        <div class="equip-card-body">
+          <h3 class="equip-title">Sew Press Machine</h3>
+          <p class="equip-meta">Capacity: 63 Ton</p>
+          <p class="equip-meta">Qty: 02 Nos</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="equip-card">
+        <h2>LASER WELDING MACHINE</h2>
+        <div class="equip-image-box">
+          <img src="assets/imgs/LASER.png" alt="Laser Welding Machine" />
+        </div>
+        <div class="equip-card-body">
+          <h3 class="equip-title">LASER WELDING MACHINE</h3>
+          <p class="equip-meta">&nbsp;</p> <!-- optional extra info -->
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Styles (paste into your stylesheet) ===== -->
+<style>
+.equip-grid h2{
+  font-size: 2.3rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin: 10px 0 40px;
+    letter-spacing: 1px;
+    /* text-shadow: 0 3px 15px rgba(33, 150, 243, 0.3); */
+    border-bottom: 2px solid rgba(155, 155, 155, 0.2);
+    display: inline-block;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+
+/* Container sizing */
+.equip-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Outer section spacing */
+.equip-section.section-space {
+  padding: 48px 0;
+}
+
+/* Grid layout */
+.equip-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+  align-items: start;
+}
+
+/* Card base */
+.equip-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+/* Hover animation */
+.equip-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(16, 24, 40, 0.12);
+}
+
+/* Image box with aspect ratio */
+.equip-image-box {
+  width: 100%;
+  padding-top: 66.6667%;
+  position: relative;
+  background: #f8fafc;
+}
+
+.equip-image-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+      /* object-fit: cover; */
+    filter: brightness(0.9) contrast(1.1);
+    transition: all 0.4s 
+ease;
+}
+
+/* Text body */
+.equip-card-body {
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #484848;
+}
+
+/* Typography */
+.equip-title {
+    color: var(--text-bright);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    border-left: 4px solid var(--blue-accent);
+    padding-left: 10px;
+}
+
+.equip-meta {
+color: var(--text-light);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 4px 0;
+}
+
+/* Fix title spacing for second card */
+.equip-card:nth-child(2) .equip-title {
+  /* margin-bottom: 8px; */
+  margin-bottom: 45px;
+}
+
+/* ===== Responsive ===== */
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .equip-container {
+    padding: 0 18px;
+  }
+  .equip-grid {
+    gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .equip-card-body {
+    padding: 14px;
+  }
+  .equip-title {
+    font-size: 1.05rem;
+  }
+  .equip-image-box {
+    padding-top: 62.5%;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .equip-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .equip-image-box {
+    padding-top: 56.25%;
+  }
+  .equip-card {
+    border-radius: 10px;
+  }
+  .equip-title {
+    font-size: 1rem;
+  }
+  .equip-card-body {
+    padding: 12px;
+  }
+}
+
+/* Extra small view */
+@media (max-width: 420px) {
+  .equip-container {
+    padding: 0 12px;
+  }
+  .equip-title {
+    font-size: 0.98rem;
+  }
+  .equip-meta {
+    font-size: 0.88rem;
+  }
+  .equip-image-box {
+    padding-top: 60%;
+  }
+}
+</style>
+
+
 
 <!-- ================= CSS ================= -->
 <style>
@@ -749,7 +950,7 @@ ease;
   overflow: hidden;
   color: var(--text-light);
   padding-bottom: 25px;
-  padding-top: 60px;
+  padding-top: 0px;
 }
 
 .tool-room-section::before {
@@ -865,7 +1066,7 @@ ease;
 /* Tablets */
 @media (max-width: 1024px) {
   .tool-room-section {
-    padding: 50px 4%;
+    padding: 0px 4%;
   }
   .tool-room-section h2 {
     font-size: 2rem;

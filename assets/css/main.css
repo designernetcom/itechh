@@ -194,7 +194,7 @@ ul {
 
 p {
   color: #595959;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   margin-bottom: 10px;
   line-height: 35px;
@@ -6400,6 +6400,7 @@ ul.about-3-list li:before {
 .breadcrumb__wrapper .breadcrumb__title {
       color: #fff;
     font-size: 40px;
+    text-align: center;
 }
 
 .breadcrumb__wrapper ul {
@@ -7968,7 +7969,7 @@ Animate wobble-vertical
   padding: 70px;
 }
 .small-container .image img {
-    width: 100% !important;
+    width: 90% !important;
     height: 100%;
     max-width: 120%;
 }
@@ -7977,6 +7978,6 @@ Animate wobble-vertical
   padding-top: 60px;
 }
 .breadcrumb__area {
-  background: linear-gradient(350deg, rgb(0 0 0), rgb(254 0 0) 0%, rgb(18 0 0) 50%, rgb(255 4 0), rgb(0 0 0) 100%);
+  background: linear-gradient(350deg, rgb(0 0 0), rgb(254 0 0) 0%, rgb(239 0 0) 50%, rgb(255 4 0), rgb(169 0 0) 100%);
   padding: 60px;
 }

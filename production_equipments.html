@@ -492,6 +492,147 @@
         padding-bottom: 0px !important;
     }
 }
+
+/* Container setup */
+.spm-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.spm-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+  gap: 40px;
+}
+
+/* Left Column */
+.spm-content {
+  flex: 1;
+}
+
+.spm-title {
+  font-size: 22px;
+  /* font-weight: 700; */
+  margin-bottom: 15px;
+}
+
+.spm-subtitle {
+    color: #595959;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 35px;
+        text-align: justify;
+    font-weight: bold;
+    visibility: visible;
+    animation-delay: 0.6s;
+    animation-name: fadeInLeft;
+}
+
+.spm-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.spm-features li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.spm-features .icon {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 10px;
+  line-height: 1.2;
+}
+
+.spm-features strong {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+  color: #595959;
+}
+
+.spm-features p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #595959;
+}
+
+/* Right Images - side by side */
+.spm-images {
+  flex: 1;
+  display: flex;
+  flex-direction: row; /* 👈 Changed from column to row */
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.spm-img {
+  width: 100%;
+  max-width: 300px; /* 👈 Control image size */
+  /* border-radius: 6px; */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  /* object-fit: cover; */
+}
+
+.spm-img.second {
+  max-width: 350px;
+}
+
+/* Responsive Design */
+/* Responsive for smaller screens */
+@media (max-width: 992px) {
+  .spm-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .spm-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .spm-img {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .spm-title {
+    font-size: 22px;
+  }
+
+  .spm-subtitle {
+    font-size: 18px;
+  }
+
+  .spm-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .spm-img {
+    max-width: 100%;
+    margin-top: -70px;
+    margin-bottom: 50px;
+  }
+
+
+  .spm-features p {
+    font-size: 14px;
+  }
+}
+
 </style>
 
 
@@ -503,202 +644,236 @@
                     Product: Refrigerator Cabinet Liner
                   </h5> -->
                 </div>
-        <div class="small-container">
-          <div class="row g-4">
-            <div class="col-xxl-6 col-xl-6 col-lg-6">
-              <!-- <div class=""> -->
-              <!-- .content start -->
-              <div class="about-us-content-area about-2-content-area p-relative z-1 pl-30">
-                <div class="title-box mb-35 wow fadeInLeft"data-wow-delay=".5s" style="text-align: center;">
-                  <!-- <span class="section-sub-title">Cabinet Liner Punching SPM</span> -->
-                  <h5 class="mb-35 wow fadeInLeft" style="text-align: left;" data-wow-delay=".6s">
-                    Product: Refrigerator Cabinet Liner
-                  </h5>
-                </div>
+<section class="spm-section">
+  <div class="spm-container">
+    <!-- Left Content -->
+    <div class="spm-content">
+      <h5 class="spm-title">Product: Refrigerator Door Panel</h5>
+      <p class="spm-subtitle">Major Highlights of the SPM</p>
 
-                <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify; font-weight: bold;">
-                    Major Highlights of the SPM
-                  </p>
-
-                  <ul class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
-                    <li><strong>Intuitive HMI Interface:</strong> <br> Equipped with an advanced, user-friendly touch-screen control (HMI) for seamless operation, real-time process monitoring, and parameter adjustments.</li>
-                    <li><strong>Integrated Safety System: </strong> <br> Multi-level safety interlocks and sensors ensure operator protection and prevent accidental operation during manual or maintenance modes.</li>
-                    <li><strong>Quick Changeover Capability:</strong>  <br> Tooling and fixture design optimized for rapid changeover - less than <strong>5 minutes</strong> - enabling high flexibility and reduced downtime between models.</li>
-                    <li><strong>Optimized Cycle Time:</strong> <br> Achieves a complete punching cycle in <strong>20 seconds</strong>, ensuring enhanced productivity and consistent output.</li>
-                    <li><strong>Flexible Production Compatibility:</strong> <br> Designed to accommodate multiple cabinet liner sizes with customizable punching variations for each model.</li>
-                    <li><strong>Multi-Model Compatibility:</strong> <br> Capable of producing <strong>DC, RC, FC, and FF</strong> models on a single platform, enhancing versatility and production efficiency.</li>
-                  </ul>
-     
-              </div>
-              <!-- .content end -->
-            </div>
-                       <div class="col-xxl-6 col-xl-6 col-lg-6">
-              <!-- image area start -->
-              <div
-                class="about-us-image-area p-relative wow fadeInRight"
-                data-wow-delay=".5s"
-              >
-                <!-- <div
-                  class="border-shape"
-                  data-background="assets/imgs/shapes/shape-6.png"
-                ></div> -->
-                <figure class="image-1">
-                  <img src="assets/imgs/Cabinet.png" alt="" />
-                </figure> 
-       
-              </div>
-              <!-- image area end -->
-            </div>
+      <ul class="spm-features">
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Advanced HMI Interface:</strong>
+            <p>
+              Equipped with an intuitive and user-friendly touch screen that
+              simplifies operation, parameter setting, and monitoring of the
+              complete punching process.
+            </p>
           </div>
-        </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Safety Interlocks:</strong>
+            <p>
+              Integrated safety systems prevent accidental operation in manual
+              mode, ensuring maximum operator protection and compliance with
+              safety standards.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Quick Changeover:</strong>
+            <p>
+              Designed with a modular tooling setup that enables changeover in
+              less than 5 minutes, minimizing downtime and improving production
+              efficiency.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>High-Speed Operation:</strong>
+            <p>
+              The machine achieves a punching cycle time of just 10 seconds,
+              ensuring fast and consistent performance for high-volume
+              production.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Flexible Panel Configuration:</strong>
+            <p>
+              Capable of handling various door panel sizes and designs with
+              programmable punching patterns for different configurations and
+              variations.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Dual-Side Operation:</strong>
+            <p>
+              Features two independent operating sides, allowing simultaneous
+              punching of two different panels to maximize productivity and
+              reduce cycle time.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Images -->
+    <div class="spm-images">
+      <img src="assets/imgs/refrigerator-2.png" alt="SPM Machine" class="spm-img" />
+      <img src="assets/imgs/refrigerator-1.png" alt="Refrigerator" class="spm-img second" />
+    </div>
+  </div>
+</section>
+
       </section>
+
+
+
+
 
             <section
         class="service-slider-section section-space p-relative product-slider"
       >
         <div class="small-container">
-          <div class="row">
-            <!-- <div class="col-xxl-12">
+          <!-- <div class="row">
+            <div class="col-xxl-12">
               <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
-                <h3 class="section-title mt-10">
-                  Door Foaming Jigs ( FC & RC )
+                <h3 class="section-title mt-10" style="margin-top: 20px;">
+                  Door Foaming Jigs (Deep Freezer)
                 </h3>
               </div>
-            </div> -->
-            <!-- <div class="col-xxl-6 text-end mt-30">
-              <div class="common-slider-navigation">
-                <button class="service-1-button-prev">
-                  <i class="icon-arrow-left-angle"></i>
-                </button>
-                <button class="service-1-button-next">
-                  <i class="icon-arrow-right-angle"></i>
-                </button>
-              </div>
-            </div> -->
-          </div>
+            </div>
+          </div> -->
 
           <div class="swiper service-active-1">
             <div class="swiper-wrapper">
-              
-
               <div class="swiper-slide">
                 <div class="service-slider-area p-relative">
                   <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Cabinet-2.png"
-                      alt="" style="max-height: 215px;
-    max-width: 270px;"
-                    />
+                    <img src="assets/imgs/liner-1.png" alt="" style="height: 420px;" />
                   </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <p style="color: black;">DC 220L Cabinet Liner Punching SPM</p>
-                  <!-- </div> -->
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Cabinet-3.png"
-                      alt="" style="max-height: 215px; max-width: 330px;"
-                    />
-                  </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <p style="color: black;">DC 195/205/225L Cabinet Liner Punching SPM</p>
-                  <!-- </div> -->
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Cabinet-4.png"
-                      alt="" style="max-height: 215px; max-width: 330px;"
-                    />
-                  </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <p style="color: black;">GEN-Y 190/200L Cabinet Liner Punching SPM </p>
-                  <!-- </div> -->
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Cabinet-5.png"
-                      alt="" style="max-height: 215px; max-width: 318px; margin-right: 245px;"
-                    />
-                  </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <p style="color: black;">245L & 265L RC Cabinet Liner Punching SPM</p>
-                  <!-- </div> -->
+                  <p style="color: black;">TM 265/350 Cabinet Liner Punching SPM</p>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="service-slider-area p-relative">
                   <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Cabinet-1.png"
-                      alt=""
-                    />
+                    <img src="assets/imgs/liner-2.png" alt="" />
                   </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <p style="color: black;">TM 265/350 Cabinet Liner Punching SPM</p>
-                  <!-- </div> -->
+                  <p style="color: black;">DC 220L Cabinet Liner Punching SPM</p>
                 </div>
               </div>
-              <!-- <div class="swiper-slide">
+              <div class="swiper-slide">
                 <div class="service-slider-area p-relative">
                   <figure class="image w-img">
-                    <img
-                      src="assets/imgs/products/door-foaming-jigs5.jpg"
-                      alt=""
-                    />
+                    <img src="assets/imgs/liner-3.png" alt="" style="height: 420px;" />
                   </figure>
+                  <p style="color: black;">DC 195/205/225L Cabinet Liner Punching SPM</p>
                 </div>
-              </div> -->
-              <!-- <div class="swiper-slide">
+              </div>
+              <div class="swiper-slide">
                 <div class="service-slider-area p-relative">
                   <figure class="image w-img">
-                    <img
-                      src="assets/imgs/products/door-foaming-jigs6.jpg"
-                      alt=""
-                    />
+                    <img src="assets/imgs/liner-4.png" alt="" />
                   </figure>
+                  <p style="color: black;">GEN-Y 190/200L Cabinet Liner Punching SPM</p>
                 </div>
-              </div> -->
-              <!-- <div class="swiper-slide">
+              </div>
+              <div class="swiper-slide">
                 <div class="service-slider-area p-relative">
                   <figure class="image w-img">
-                    <img
-                      src="assets/imgs/products/door-foaming-jigs7.jpg"
-                      alt=""
-                    />
+                    <img src="assets/imgs/liner-5.png" alt="" />
                   </figure>
+                  <p style="color: black;">245L & 265L RC Cabinet Liner Punching SPM</p>
                 </div>
-              </div> -->
-
-              <!-- Add more slides as needed -->
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+
+
+
+
+
+      <section
+        class="service-slider-section section-space p-relative product-slider"
+      >
+        <div class="small-container">
+          <div class="row">
+            <div class="col-xxl-12">
+              <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
+                <h3 class="section-title mt-10" style="margin-top: 20px;">
+                  Door Foaming Jigs (Deep Freezer)
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper service-active-1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="service-slider-area p-relative">
+                  <figure class="image w-img">
+                    <img src="assets/imgs/products/deep-freezer.jpg" alt="" />
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="service-slider-area p-relative">
+                  <figure class="image w-img">
+                    <img src="assets/imgs/products/deep-freezer1.jpg" alt="" />
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-slider-area p-relative">
+                  <figure class="image w-img">
+                    <img src="assets/imgs/products/deep-freezer2.jpg" alt="" />
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-slider-area p-relative">
+                  <figure class="image w-img">
+                    <img src="assets/imgs/products/deep-freezer3.jpg" alt="" />
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-slider-area p-relative">
+                  <figure class="image w-img">
+                    <img src="assets/imgs/products/deep-freezer4.jpg" alt="" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
 
 <style>
 
@@ -733,85 +908,94 @@
                     Product: Refrigerator Door Liner
                   </h5> -->
                 </div>
-        <div class="small-container">
-          <div class="row g-4">
-            <div class="col-xxl-6 col-xl-6 col-lg-6">
-              <!-- <div class=""> -->
-              <!-- .content start -->
-              <div
-                class="about-us-content-area about-2-content-area p-relative z-1 pl-30"
-              >
-                <div class="title-box mb-35 wow fadeInLeft"data-wow-delay=".5s" style="text-align: center;">
-                  <!-- <span class="section-sub-title">Door Liner Punching SPM</span> -->
-                  <h5 class="mb-35 wow fadeInLeft" style="text-align: left;" data-wow-delay=".6s">
-                    Product: Refrigerator Door Liner
-                  </h5>
-                </div>
-                <!-- <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
-                Refrigerator Door and Cabinet Liner Thermoforming Moulds are precision-engineered tools designed to produce high-quality inner liners for refrigerator doors and cabinets through the thermoforming process. These moulds ensure accurate shape, smooth surface finish, and consistent wall thickness, resulting in premium-quality liners with excellent fit and aesthetics.
-                </p>
-                <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
-                Manufactured using <strong>high-grade aluminum casting</strong>, the moulds are integrated with efficient <strong>vacuum and cooling channels</strong> to achieve uniform forming and fast cycle times. Their robust design ensures durability, dimensional accuracy, and long service life — even under continuous production conditions.
-                  </p>  -->
-                  
-                  <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify; font-weight: bold;">
-                    Major Highlights of the SPM
-                  </p>
+                <section class="spm-section">
+  <div class="spm-container">
+    <!-- Left Content -->
+    <div class="spm-content">
+      <h5 class="spm-title">Product: Refrigerator Door Panel</h5>
+      <p class="spm-subtitle">Major Highlights of the SPM</p>
 
-                  <ul class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
-                    <li><strong>Intuitive HMI Interface:</strong> <br> Equipped with an advanced, user-friendly touch-screen control (HMI) for seamless operation, real-time process monitoring, and parameter adjustments.</li>
-                    <li><strong>Integrated Safety System: </strong> <br> Multi-level safety interlocks and sensors ensure operator protection and prevent accidental operation during manual or maintenance modes.</li>
-                    <li><strong>Quick Changeover Capability:</strong>  <br> Tooling and fixture design optimized for rapid changeover - less than <strong>5 minutes</strong> - enabling high flexibility and reduced downtime between models.</li>
-                    <li><strong>Optimized Cycle Time:</strong> <br> Achieves a complete punching cycle in <strong>20 seconds</strong>, ensuring enhanced productivity and consistent output.</li>
-                    <li><strong>Flexible Production Compatibility:</strong> <br> Designed to accommodate multiple cabinet liner sizes with customizable punching variations for each model.</li>
-                    <li><strong>Multi-Model Compatibility:</strong> <br> Capable of producing <strong>DC, RC, FC, and FF</strong> models on a single platform, enhancing versatility and production efficiency.</li>
-                  </ul>
-     
-              </div>
-              <!-- .content end -->
-            </div>
-                       <div class="col-xxl-6 col-xl-6 col-lg-6">
-              <!-- image area start -->
-              <div
-                class="about-us-image-area p-relative wow fadeInRight"
-                data-wow-delay=".5s"
-              >
-                <!-- <div
-                  class="border-shape"
-                  data-background="assets/imgs/shapes/shape-6.png"
-                ></div> -->
-                <figure class="image-1">
-                  <img src="assets/imgs/Refrigerator.png" alt="" />
-                </figure> 
-               <!-- <div class="image-2-area">
-                  <div class="image-2 p-relative">
-                    <img src="assets/imgs/about/about-2.jpg" alt="" />
-                    <div class="play-btn">
-                      <div class="video_player_btn">
-                        <a
-                          href="https://www.youtube.com/watch?v=eEzD-Y97ges"
-                          class="popup-video"
-                          ><i class="icon-play"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- <div class="working-area float-bob-y">
-                  <div class="inner p-relative">
-                    <div class="icon-box">
-                      <i class="icon-prize"></i>
-                      <h4><span class="counter">25</span> Years</h4>
-                      <p>Working Experience</p>
-                    </div>
-                  </div>
-                </div> -->
-              </div>
-              <!-- image area end -->
-            </div>
+      <ul class="spm-features">
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Intuitive HMI Interface:</strong>
+            <p>
+              Equipped with an advanced, user-friendly touch-screen control (HMI) for seamless operation, real-time process monitoring, and parameter adjustments.
+            </p>
           </div>
-        </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Integrated Safety System:</strong>
+            <p>
+              Multi-level safety interlocks and sensors ensure operator protection and prevent accidental operation during manual or maintenance modes.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Quick Changeover Capability:</strong>
+            <p>
+              Tooling and fixture design optimized for rapid changeover — less than 5 minutes — enabling high flexibility and reduced downtime between models.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Optimized Cycle Time:</strong>
+            <p>
+              Achieves a complete punching cycle in 20 seconds, ensuring enhanced productivity and consistent output.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Flexible Production Compatibility:</strong>
+            <p>
+              Designed to accommodate multiple door liner sizes with customizable punching variations for each model.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Multi-Model Compatibility:</strong>
+            <p>
+              Capable of producing DC, RC, FC, and FF models on a single platform, enhancing versatility and production efficiency.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Images -->
+    <div class="spm-image">
+      <img src="assets/imgs/ref-door1.png" alt="SPM Machine" class="spm-img-images" />
+      <img src="assets/imgs/ref-door-2.png" alt="Refrigerator" class="spm-img second" />
+    </div>
+  </div>
+</section>
       </section>
+
+      <style>
+        .spm-img-images {
+    width: 117%;
+    max-width: 260px;
+    /* border-radius: 6px; */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    /* object-fit: cover; */
+}
+      </style>
 
 
                   <section
@@ -844,7 +1028,7 @@
                 <div class="service-slider-area p-relative">
                   <figure class="image w-img">
                     <img
-                      src="assets/imgs/Punching-1.png"
+                      src="assets/imgs/liner-6.png"
                       alt=""
                     />
                   </figure>
@@ -861,7 +1045,7 @@
                 <div class="service-slider-area p-relative">
                   <figure class="image w-img">
                     <img
-                      src="assets/imgs/Punching-2.png"
+                      src="assets/imgs/liner-7.png"
                       alt=""
                     />
                   </figure>
@@ -877,7 +1061,7 @@
                 <div class="service-slider-area p-relative">
                   <figure class="image w-img">
                     <img
-                      src="assets/imgs/Punching-3.png"
+                      src="assets/imgs/liner-8.png"
                       alt="" 
                     />
                   </figure>
@@ -936,85 +1120,199 @@
                     Product: Refrigerator Door Panel
                   </h5> -->
                 </div>
-        <div class="small-container">
-          <div class="row g-4">
-            <div class="col-xxl-6 col-xl-6 col-lg-6">
-              <!-- <div class=""> -->
-              <!-- .content start -->
-              <div
-                class="about-us-content-area about-2-content-area p-relative z-1 pl-30"
-              >
-                <div class="title-box mb-35 wow fadeInLeft"data-wow-delay=".5s" style="text-align: center;">
-                  <!-- <span class="section-sub-title">Door Panel Notching Punching SPM</span> -->
-                  <h5 class="mb-35 wow fadeInLeft" style="text-align: left;" data-wow-delay=".6s">
-                    Product: Refrigerator Door Panel
-                  </h5>
-                </div>
-                <!-- <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
-                Refrigerator Door and Cabinet Liner Thermoforming Moulds are precision-engineered tools designed to produce high-quality inner liners for refrigerator doors and cabinets through the thermoforming process. These moulds ensure accurate shape, smooth surface finish, and consistent wall thickness, resulting in premium-quality liners with excellent fit and aesthetics.
-                </p>
-                <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
-                Manufactured using <strong>high-grade aluminum casting</strong>, the moulds are integrated with efficient <strong>vacuum and cooling channels</strong> to achieve uniform forming and fast cycle times. Their robust design ensures durability, dimensional accuracy, and long service life — even under continuous production conditions.
-                  </p>  -->
-                  
-                  <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify; font-weight: bold;">
-                    Major Highlights of the SPM
-                  </p>
+                <section class="spm-section">
+  <div class="spm-container">
+    <!-- Left Content -->
+    <div class="spm-content">
+      <h5 class="spm-title">Product: Refrigerator Door Panel</h5>
+      <p class="spm-subtitle">Major Highlights of the SPM</p>
 
-                  <ul class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
-                    <li><strong>Advanced HMI Interface:</strong> <br> Equipped with an intuitive and user-friendly touch screen that simplifies operation, parameter setting, and monitoring of the complete punching process.</li>
-                    <li><strong>Safety Interlocks: </strong> <br> Integrated safety systems prevent accidental operation in manual mode, ensuring maximum operator protection and compliance with safety standards.</li>
-                    <li><strong>Quick Changeover:</strong>  <br> Designed with a modular tooling setup that enables changeover in less than 5 minutes, minimizing downtime and improving production efficiency.</li>
-                    <li><strong>High-Speed Operation:</strong> <br>  The machine achieves a punching cycle time of just 10 seconds, ensuring fast and consistent performance for high-volume production.</li>
-                    <li><strong>Flexible Panel Configuration:</strong> <br> Capable of handling various door panel sizes and designs with programmable punching patterns for different configurations and variations.</li>
-                    <li><strong>Dual-Side Operation:</strong> <br> Features two independent operating sides, allowing simultaneous punching of two different panels to maximize productivity and reduce cycle time.</li>
-                  </ul>
-     
-              </div>
-              <!-- .content end -->
-            </div>
-                       <div class="col-xxl-6 col-xl-6 col-lg-6">
-              <!-- image area start -->
-              <div
-                class="about-us-image-area p-relative wow fadeInRight"
-                data-wow-delay=".5s"
-              >
-                <!-- <div
-                  class="border-shape"
-                  data-background="assets/imgs/shapes/shape-6.png"
-                ></div> -->
-                <figure class="image-1">
-                  <img src="assets/imgs/Notching-2.png" alt="" />
-                </figure> 
-               <!-- <div class="image-2-area">
-                  <div class="image-2 p-relative">
-                    <img src="assets/imgs/about/about-2.jpg" alt="" />
-                    <div class="play-btn">
-                      <div class="video_player_btn">
-                        <a
-                          href="https://www.youtube.com/watch?v=eEzD-Y97ges"
-                          class="popup-video"
-                          ><i class="icon-play"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- <div class="working-area float-bob-y">
-                  <div class="inner p-relative">
-                    <div class="icon-box">
-                      <i class="icon-prize"></i>
-                      <h4><span class="counter">25</span> Years</h4>
-                      <p>Working Experience</p>
-                    </div>
-                  </div>
-                </div> -->
-              </div>
-              <!-- image area end -->
-            </div>
+      <ul class="spm-features">
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Advanced HMI Interface:</strong>
+            <p>
+              Equipped with an intuitive and user-friendly touch screen that simplifies operation, parameter setting, and monitoring of the complete punching process.
+            </p>
           </div>
-        </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Safety Interlocks:</strong>
+            <p>
+              Integrated safety systems prevent accidental operation in manual mode, ensuring maximum operator protection and compliance with safety standards.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Quick Changeover:</strong>
+            <p>
+              Designed with a modular tooling setup that enables changeover in less than 5 minutes, minimizing downtime and improving production efficiency.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>High-Speed Operation:</strong>
+            <p>
+              The machine achieves a punching cycle time of just 10 seconds, ensuring fast and consistent performance for high-volume production.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Flexible Panel Configuration:</strong>
+            <p>
+              Capable of handling various door panel sizes and designs with programmable punching patterns for different configurations and variations.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Dual-Side Operation:</strong>
+            <p>
+              Features two independent operating sides, allowing simultaneous punching of two different panels to maximize productivity and reduce cycle time.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Images -->
+<div class="spm-image">
+  <div class="spm-img-wrapper">
+  <img src="assets/imgs/Punching2.png" alt="SPM Machine" class="spm-img-image" />
+  <p class="spm-img-caption">Door Panel Notching Punching SPM</p>
+  </div>
+  <img src="assets/imgs/Punching1.png" alt="Refrigerator" class="spm-img second" />
+</div>
+
+    
+    
+  
+
+  </div>
+</section>
       </section>
+
+      <style>
+
+
+/* ========== Responsive Design ========== */
+
+/* --- Large screens (above 1200px) --- */
+@media (min-width: 1200px) {
+  .spm-container {
+    gap: 60px;
+  }
+}
+
+/* --- Tablets (768px - 1199px) --- */
+@media (max-width: 1199px) {
+  .spm-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .spm-content {
+    max-width: 700px;
+  }
+
+  .spm-image {
+    margin-top: 30px;
+  }
+
+  .spm-features li {
+    text-align: left;
+  }
+}
+
+/* --- Mobile (up to 767px) --- */
+@media (max-width: 767px) {
+  .about-us-section {
+    padding: 20px 20px;
+  }
+
+  .title-box .section-sub-title {
+    font-size: 20px;
+  }
+
+  .spm-title {
+    font-size: 18px;
+  }
+
+  .spm-subtitle {
+    font-size: 16px;
+  }
+
+  .spm-features li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .spm-features strong {
+    font-size: 15px;
+  }
+
+  .spm-features p {
+    font-size: 14px;
+  }
+
+  .spm-img-image,
+  .spm-img.second {
+    max-width: 100% !important;
+  }
+
+  .spm-img-caption {
+    font-size: 14px;
+  }
+}
+
+/* --- Small mobile (below 480px) --- */
+@media (max-width: 480px) {
+  .title-box .section-sub-title {
+    font-size: 18px;
+  }
+
+  .spm-title {
+    font-size: 16px;
+  }
+
+  .spm-subtitle {
+    font-size: 15px;
+  }
+
+  .spm-features p {
+    font-size: 13px;
+  }
+}
+
+        .spm-img-wrapper {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.spm-img-caption {
+  font-size: 16px;
+  color: #333;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+      </style>
 
 
 
@@ -1025,87 +1323,241 @@
                     Product: Refrigerator Glass Door
                   </h5> -->
                 </div>
-        <div class="small-container">
-          <div class="row g-4">
-            <div class="col-xxl-6 col-xl-6 col-lg-6">
-              <!-- <div class=""> -->
-              <!-- .content start -->
-              <div
-                class="about-us-content-area about-2-content-area p-relative z-1 pl-30"
-              >
-                <div class="title-box mb-35 wow fadeInLeft"data-wow-delay=".5s" style="text-align: center;">
-                  <!-- <span class="section-sub-title">Glass on Door Pressing SPM</span> -->
-                  <h5 class="mb-35 wow fadeInLeft" style="text-align: left;" data-wow-delay=".6s">
-                    Product: Refrigerator Glass Door
-                  </h5>
-                </div>
-                <!-- <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
-                Refrigerator Door and Cabinet Liner Thermoforming Moulds are precision-engineered tools designed to produce high-quality inner liners for refrigerator doors and cabinets through the thermoforming process. These moulds ensure accurate shape, smooth surface finish, and consistent wall thickness, resulting in premium-quality liners with excellent fit and aesthetics.
-                </p>
-                <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
-                Manufactured using <strong>high-grade aluminum casting</strong>, the moulds are integrated with efficient <strong>vacuum and cooling channels</strong> to achieve uniform forming and fast cycle times. Their robust design ensures durability, dimensional accuracy, and long service life — even under continuous production conditions.
-                  </p>  -->
-                  
-                  <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify; font-weight: bold;">
-                    Major Highlights of the SPM
-                  </p>
+                <section class="spm-section">
+  <div class="spm-container">
+    <!-- Left Content -->
+    <div class="spm-content">
+      <h5 class="spm-title">Product: Refrigerator Door Panel</h5>
+      <p class="spm-subtitle">Major Highlights of the SPM</p>
 
-                  <ul class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
-                    <li><strong>Automated Gluing System: </strong> <br> Equipped with a high-precision <strong>Nordson glue dispensing unit</strong> for accurate and consistent adhesive application on glass door panels.</li>
-                    <li><strong>Robotic Dispensing: </strong> <br> Integrated <strong>6-axis</strong> robot ensures uniform glue distribution with precise path control, reducing material wastage and improving bonding quality.</li>
-                    <li><strong>Dual Pressing Stations: </strong>  <br> Machine features <strong>two independent pressing stations</strong> for simultaneous assembly operations, enhancing cycle efficiency and output.</li>
-                    <li><strong>Advanced HMI Interface: </strong> <br> User-friendly <strong>touch-screen control panel</strong> for easy operation, parameter setting, and real-time process monitoring.</li>
-                    <li><strong>Quick Changeover: </strong> <br> Modular design enables rapid changeover between different door models, minimizing downtime and setup effort.</li>
-                    <li><strong>High Process Accuracy: </strong> <br> Controlled dispensing parameters and automated pressing sequence ensure consistent bond strength and repeatability across all assemblies.</li>
-                    <li><strong>Safety & Reliability: </strong> <br> Integrated safety interlocks and sensors ensure safe operation during manual intervention and maintenance.</li>
-                    <li><strong>Data Monitoring & Diagnostics: </strong> <br> System supports real-time process data logging and fault diagnostics for improved process traceability and maintenance planning</li>
-                  </ul>
-     
-              </div>
-              <!-- .content end -->
-            </div>
-                                   <div class="col-xxl-6 col-xl-6 col-lg-6">
-              <!-- image area start -->
-              <div
-                class="about-us-image-area p-relative wow fadeInRight"
-                data-wow-delay=".5s"
-              >
-                <!-- <div
-                  class="border-shape"
-                  data-background="assets/imgs/shapes/shape-6.png"
-                ></div> -->
-                <figure class="image-1">
-                  <img src="assets/imgs/Pressing.png" alt="" />
-                </figure> 
-               <!-- <div class="image-2-area">
-                  <div class="image-2 p-relative">
-                    <img src="assets/imgs/about/about-2.jpg" alt="" />
-                    <div class="play-btn">
-                      <div class="video_player_btn">
-                        <a
-                          href="https://www.youtube.com/watch?v=eEzD-Y97ges"
-                          class="popup-video"
-                          ><i class="icon-play"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- <div class="working-area float-bob-y">
-                  <div class="inner p-relative">
-                    <div class="icon-box">
-                      <i class="icon-prize"></i>
-                      <h4><span class="counter">25</span> Years</h4>
-                      <p>Working Experience</p>
-                    </div>
-                  </div>
-                </div> -->
-              </div>
-              <!-- image area end -->
-            </div>
+      <ul class="spm-features">
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Automated Gluing System:</strong>
+            <p>
+              Equipped with a high-precision Nordson glue dispensing unit for accurate and consistent adhesive application on glass door panels.
+            </p>
           </div>
-        </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Robotic Dispensing:</strong>
+            <p>
+              Integrated 6-axis robot ensures uniform glue distribution with precise path control, reducing material wastage and improving bonding quality.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Dual Pressing Stations:</strong>
+            <p>
+              Machine features two independent pressing stations for simultaneous assembly operations, enhancing cycle efficiency and output.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Advanced HMI Interface:</strong>
+            <p>
+              User-friendly touch-screen control panel for easy operation, parameter setting, and real-time process monitoring.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Quick Changeover:</strong>
+            <p>
+              Modular design enables rapid changeover between different door models, minimizing downtime and setup effort.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>High Process Accuracy:</strong>
+            <p>
+              Controlled dispensing parameters and automated pressing sequence ensure consistent bond strength and repeatability across all assemblies.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Safety & Reliability:</strong>
+            <p>
+              Integrated safety interlocks and sensors ensure safe operation during manual intervention and maintenance.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Data Monitoring & Diagnostics:</strong>
+            <p>
+              System supports real-time process data logging and fault diagnostics for improved process traceability and maintenance planning
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Images -->
+    <div class="spm-image">
+        <div class="spm-img-wrapper">
+          <img src="assets/imgs/Glass2.png" alt="SPM Machine" class="spm-imgs" />
+          <p class="spm-img-caption">Glass on Door Pressing SPM</p>
+       </div>
+      <img src="assets/imgs/Glass1.png" alt="Refrigerator" class="spm-img second" />
+    </div>
+  </div>
+</section>
+
       </section>
+
+      <style>
+        /* ===== Desktop View (≥1025px) ===== */
+@media (min-width: 1025px) {
+  .spm-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .spm-image {
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .spm-imgs {
+    width: 100% !important;
+  }
+
+  .spm-img.second {
+    width: 40%;
+  }
+}
+
+/* ===== Tablet View (768px – 1024px) ===== */
+@media (max-width: 1024px) {
+  .spm-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .spm-content {
+    max-width: 700px;
+  }
+
+  .spm-features li {
+    text-align: left;
+  }
+
+  .spm-image {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .spm-imgs,
+  .spm-img.second {
+    max-width: 80%;
+  }
+}
+
+/* ===== Mobile View (≤767px) ===== */
+@media (max-width: 767px) {
+  .spm-section {
+    padding: 0px 15px;
+  }
+
+  .spm-title {
+    font-size: 18px;
+  }
+
+  .spm-subtitle {
+    font-size: 16px;
+  }
+
+  .spm-features li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .spm-features .icon {
+    font-size: 16px;
+  }
+
+  .spm-imgs,
+  .spm-img.second {
+    width: 100% !important;
+    max-width: 100%;
+   margin-top: -70px;
+  }
+
+  .spm-img-caption {
+    font-size: 14px;
+  }
+}
+
+/* ===== Small Screen (≤480px) ===== */
+@media (max-width: 480px) {
+  .spm-title {
+    font-size: 16px;
+            text-align: left;
+  }
+
+  .spm-subtitle {
+    font-size: 15px;
+  }
+
+  .spm-features p {
+    font-size: 14px;
+  }
+
+  .spm-img-caption {
+    font-size: 13px;
+  }
+}
+
+
+        .spm-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-content: space-around;
+        }
+
+    .spm-imgs {
+    width: 123%;
+    max-width: 550px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+    .spm-img-image {
+    width: 123%;
+    max-width: 400px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+      </style>
 
       <section class="about-us-section section-space p-relative">
         <div class="title-box mb-35 wow fadeInLeft"data-wow-delay=".5s" style="text-align: center;">
@@ -1114,81 +1566,111 @@
                     Product: Refrigerator Glass Door
                   </h5> -->
                 </div>
-        <div class="small-container">
-          <div class="row g-4">
-            <div class="col-xxl-6 col-xl-6 col-lg-6">
-              <!-- <div class=""> -->
-              <!-- .content start -->
-              <div
-                class="about-us-content-area about-2-content-area p-relative z-1 pl-30"
-              >
-                
-                <!-- <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
-                Refrigerator Door and Cabinet Liner Thermoforming Moulds are precision-engineered tools designed to produce high-quality inner liners for refrigerator doors and cabinets through the thermoforming process. These moulds ensure accurate shape, smooth surface finish, and consistent wall thickness, resulting in premium-quality liners with excellent fit and aesthetics.
-                </p>
-                <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
-                Manufactured using <strong>high-grade aluminum casting</strong>, the moulds are integrated with efficient <strong>vacuum and cooling channels</strong> to achieve uniform forming and fast cycle times. Their robust design ensures durability, dimensional accuracy, and long service life — even under continuous production conditions.
-                  </p>  -->
-                  
-                  <p class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify; font-weight: bold;">
-                    Major Highlights of the SPM
-                  </p>
+                <section class="spm-section">
+  <div class="spm-container">
+    <!-- Left Content -->
+    <div class="spm-content">
+      <h5 class="spm-title">Product: Refrigerator Door Panel</h5>
+      <p class="spm-subtitle">Major Highlights of the SPM</p>
 
-                  <ul class="mb-35 wow fadeInLeft" data-wow-delay=".6s" style="text-align: justify;">
-                    <li><strong>Flexible Panel Handling: </strong> <br>  Designed to bend <strong>different types and sizes of refrigerator back panels</strong> with high accuracy and repeatability.</li>
-                    <li><strong>Servo-Based Changeover System: </strong> <br> Equipped with a <strong>fully automated servo-driven changeover mechanism</strong>, enabling quick and precise adjustment between panel variants without manual intervention.</li>
-                    <li><strong>High Bending Accuracy: </strong>  <br> Servo-controlled motion ensures consistent bending angles and dimensions across all panel types, maintaining superior quality standards.</li>
-                    <li><strong>Advanced HMI Interface: </strong> <br> Intuitive touch-screen control panel for easy operation, recipe selection, and process monitoring.</li>
-                    <li><strong>Robust Construction: </strong> <br> Heavy-duty frame and precision components ensure long-term stability and vibration-free operation.</li>
-                    <li><strong>Safety Features: </strong> <br> Integrated <strong>safety interlocks and sensors</strong> to ensure safe operation during manual and automatic modes.</li>
-                    <li><strong>Data Integration: </strong> <br> Capable of <strong>storing multiple panel programs</strong> and recording production data for process optimization and traceability.</li>
-                    <!-- <li><strong>Data Monitoring & Diagnostics: </strong> <br> System supports real-time process data logging and fault diagnostics for improved process traceability and maintenance planning</li> -->
-                  </ul>
-     
-              </div>
-              <!-- .content end -->
-            </div>
-            <div class="col-xxl-6 col-xl-6 col-lg-6">
-              <!-- image area start -->
-              <div
-                class="about-us-image-area p-relative wow fadeInRight"
-                data-wow-delay=".5s"
-              >
-                <!-- <div
-                  class="border-shape"
-                  data-background="assets/imgs/shapes/shape-6.png"
-                ></div> -->
-                <figure class="image-1">
-                  <img src="assets/imgs/Bending.png" alt="" />
-                </figure> 
-               <!-- <div class="image-2-area">
-                  <div class="image-2 p-relative">
-                    <img src="assets/imgs/about/about-2.jpg" alt="" />
-                    <div class="play-btn">
-                      <div class="video_player_btn">
-                        <a
-                          href="https://www.youtube.com/watch?v=eEzD-Y97ges"
-                          class="popup-video"
-                          ><i class="icon-play"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- <div class="working-area float-bob-y">
-                  <div class="inner p-relative">
-                    <div class="icon-box">
-                      <i class="icon-prize"></i>
-                      <h4><span class="counter">25</span> Years</h4>
-                      <p>Working Experience</p>
-                    </div>
-                  </div>
-                </div> -->
-              </div>
-              <!-- image area end -->
-            </div>
+      <ul class="spm-features">
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Flexible Panel Handling:</strong>
+            <p>
+              Designed to bend different types and sizes of refrigerator back panels with high accuracy and repeatability.
+            </p>
           </div>
-        </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Servo-Based Changeover System:</strong>
+            <p>
+              Equipped with a fully automated servo-driven changeover mechanism, enabling quick and precise adjustment between panel variants without manual intervention.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>High Bending Accuracy:</strong>
+            <p>
+              Servo-controlled motion ensures consistent bending angles and dimensions across all panel types, maintaining superior quality standards.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Advanced HMI Interface:</strong>
+            <p>
+              Intuitive touch-screen control panel for easy operation, recipe selection, and process monitoring.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Robust Construction:</strong>
+            <p>
+              Heavy-duty frame and precision components ensure long-term stability and vibration-free operation.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Safety Features:</strong>
+            <p>
+              Integrated safety interlocks and sensors to ensure safe operation during manual and automatic modes.
+            </p>
+          </div>
+        </li>
+
+        <!-- <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Data Integration:</strong>
+            <p>
+              Capable of storing multiple panel programs and recording production data for process optimization and traceability.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon">✔</span>
+          <div>
+            <strong>Data Monitoring & Diagnostics:</strong>
+            <p>
+              System supports real-time process data logging and fault diagnostics for improved process traceability and maintenance planning
+            </p>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+
+    <!-- Right Images -->
+    <div class="spm-images">
+    <div class="spm-img-wrapper">
+      <img src="assets/imgs/Bending2.png" alt="SPM Machine" class="spm-img" />
+      <p class="spm-img-caption">Back Panel Bending SPM</p>
+    </div>
+      <img src="assets/imgs/Bending1.png" alt="Refrigerator" class="spm-img second" />
+    </div>
+  </div>
+</section>
+
+
+
+
+
       </section>
 
     </main>
