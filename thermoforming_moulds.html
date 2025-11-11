@@ -458,301 +458,150 @@
   font-weight: bold;
 }
 
+
+
+
+.service-static-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-slider-area {
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.service-slider-area img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 10px; */
+  transition: transform 0.3s ease;
+}
+
+.service-slider-area img:hover {
+  transform: scale(1.05);
+}
+
+
 </style>
 
 
 
 
-            <section
-        class="service-slider-section section-space p-relative product-slider"
-      >
-        <div class="small-container">
-          <div class="row">
-            <div class="col-xxl-12">
-              <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
-                <h3 class="section-title mt-10">
-                  Cabinet Thermoforming Moulds
-                </h3>
-              </div>
-            </div>
-            <!-- <div class="col-xxl-6 text-end mt-30">
-              <div class="common-slider-navigation">
-                <button class="service-1-button-prev">
-                  <i class="icon-arrow-left-angle"></i>
-                </button>
-                <button class="service-1-button-next">
-                  <i class="icon-arrow-right-angle"></i>
-                </button>
-              </div>
-            </div> -->
-          </div>
-
-          <div class="swiper service-active-1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Thermoforming-1.png"
-                      alt=""
-                    />
-                  </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <!-- <p style="color: black;">TM 265/350 Cabinet Liner Punching SPM</p> -->
-                  <!-- </div> -->
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Thermoforming-2.png"
-                      alt="" 
-                    />
-                  </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <!-- <p style="color: black;">DC 220L Cabinet Liner Punching SPM</p> -->
-                  <!-- </div> -->
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Thermoforming-3.png"
-                      alt="" 
-                    />
-                  </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <!-- <p style="color: black;">DC 195/205/225L Cabinet Liner Punching SPM</p> -->
-                  <!-- </div> -->
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Thermoforming-4.png"
-                      alt="" 
-                    />
-                  </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <!-- <p style="color: black;">GEN-Y 190/200L Cabinet Liner Punching SPM </p> -->
-                  <!-- </div> -->
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Thermoforming-5.png"
-                      alt=""
-                    />
-                  </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <!-- <p style="color: black;">245L & 265L RC Cabinet Liner Punching SPM</p> -->
-                  <!-- </div> -->
-                </div>
-              </div>
-              <!-- <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/products/door-foaming-jigs5.jpg"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-              </div> -->
-              <!-- <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/products/door-foaming-jigs6.jpg"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-              </div> -->
-              <!-- <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/products/door-foaming-jigs7.jpg"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-              </div> -->
-
-              <!-- Add more slides as needed -->
-            </div>
-          </div>
+<section class="service-slider-section section-space p-relative product-slider">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-xxl-12">
+        <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
+          <h3 class="section-title mt-10">Cabinet Thermoforming Moulds</h3>
         </div>
-      </section>
+      </div>
+    </div>
+
+    <!-- Removed Swiper -->
+    <div class="service-static-grid">
+      <div class="service-slider-area p-relative">
+        <figure class="image w-img">
+          <img src="assets/imgs/Thermoforming1.png" alt="Thermoforming 1" />
+        </figure>
+      </div>
+
+      <div class="service-slider-area p-relative">
+        <figure class="image w-img">
+          <img src="assets/imgs/Thermoforming2.png" alt="Thermoforming 2" />
+        </figure>
+      </div>
+
+      <div class="service-slider-area p-relative">
+        <figure class="image w-img">
+          <img src="assets/imgs/Thermoforming3.png" alt="Thermoforming 3" />
+        </figure>
+      </div>
+
+      <div class="service-slider-area p-relative">
+        <figure class="image w-img">
+          <img src="assets/imgs/Thermoforming4.png" alt="Thermoforming 4" />
+        </figure>
+      </div>
+
+      <div class="service-slider-area p-relative">
+        <figure class="image w-img">
+          <img src="assets/imgs/Thermoforming5.png" alt="Thermoforming 5" />
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
 
-                  <section
-        class="service-slider-section section-space p-relative product-slider"
-      >
-        <div class="small-container">
-          <div class="row">
-            <div class="col-xxl-12">
-              <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
-                <h3 class="section-title mt-10">
-                  Door Thermoforming Moulds
-                </h3>
-              </div>
-            </div>
-            <!-- <div class="col-xxl-6 text-end mt-30">
-              <div class="common-slider-navigation">
-                <button class="service-1-button-prev">
-                  <i class="icon-arrow-left-angle"></i>
-                </button>
-                <button class="service-1-button-next">
-                  <i class="icon-arrow-right-angle"></i>
-                </button>
-              </div>
-            </div> -->
-          </div>
 
-          <div class="swiper service-active-1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Thermoforming-6.png"
-                      alt=""
-                    />
-                  </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <!-- <p style="color: black;">TM 265/350 Cabinet Liner Punching SPM</p> -->
-                  <!-- </div> -->
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Thermoforming-7.png"
-                      alt="" 
-                    />
-                  </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <!-- <p style="color: black;">DC 220L Cabinet Liner Punching SPM</p> -->
-                  <!-- </div> -->
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Thermoforming-8.png"
-                      alt="" 
-                    />
-                  </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <!-- <p style="color: black;">DC 195/205/225L Cabinet Liner Punching SPM</p> -->
-                  <!-- </div> -->
-                </div>
-              </div>
-              <!-- <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Thermoforming-4.png"
-                      alt="" 
-                    />
-                  </figure> -->
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <!-- <p style="color: black;">GEN-Y 190/200L Cabinet Liner Punching SPM </p> -->
-                  <!-- </div> -->
-                <!-- </div> -->
-              <!-- </div>
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/Thermoforming-5.png"
-                      alt=""
-                    />
-                  </figure> -->
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <!-- <p style="color: black;">245L & 265L RC Cabinet Liner Punching SPM</p> -->
-                  <!-- </div> -->
-                <!-- </div>
-              </div> -->
-              <!-- <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/products/door-foaming-jigs5.jpg"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-              </div> -->
-              <!-- <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/products/door-foaming-jigs6.jpg"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-              </div> -->
-              <!-- <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/products/door-foaming-jigs7.jpg"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-              </div> -->
-
-              <!-- Add more slides as needed -->
-            </div>
-          </div>
+<section class="service-slider-section section-space p-relative product-slider">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-xxl-12">
+        <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
+          <h3 class="section-title mt-10">
+            Door Thermoforming Moulds
+          </h3>
         </div>
-      </section>
+      </div>
+    </div>
+
+    <!-- Static images without slider -->
+    <div class="service-static-grid">
+      <div class="service-item">
+        <figure class="image w-img">
+          <img src="assets/imgs/Thermoforming6.png" alt="Thermoforming Mould 1" />
+        </figure>
+      </div>
+
+      <div class="service-item">
+        <figure class="image w-img">
+          <img src="assets/imgs/Thermoforming7.png" alt="Thermoforming Mould 2" />
+        </figure>
+      </div>
+
+      <div class="service-item">
+        <figure class="image w-img">
+          <img src="assets/imgs/Thermoforming8.png" alt="Thermoforming Mould 3" style="margin-bottom: 5px;"/>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  .service-static-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-item {
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: center;
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 10px; */
+  transition: transform 0.3s ease;
+}
+
+.service-item img:hover {
+  transform: scale(1.05);
+}
+
+</style>
 
 
 

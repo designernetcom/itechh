@@ -576,11 +576,13 @@
 }
 
 .spm-img {
-  width: 100%;
-  max-width: 300px; /* 👈 Control image size */
+    /* height: 66%; */
+    width: 117%;
+    /* max-width: 385px; */
   /* border-radius: 6px; */
   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
   /* object-fit: cover; */
+  max-width: 480px;
 }
 
 .spm-img.second {
@@ -740,74 +742,80 @@
 
 
 
-            <section
-        class="service-slider-section section-space p-relative product-slider"
-      >
-        <div class="small-container">
-          <!-- <div class="row">
-            <div class="col-xxl-12">
-              <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
-                <h3 class="section-title mt-10" style="margin-top: 20px;">
-                  Door Foaming Jigs (Deep Freezer)
-                </h3>
-              </div>
-            </div>
-          </div> -->
+<section class="service-slider-section section-space p-relative product-slider">
+  <div class="small-container">
+    <div class="image-grid">
+      <div class="service-slider-area p-relative">
+        <figure class="image w-img">
+          <img src="assets/imgs/liner1.png" alt="" />
+        </figure>
+        <p style="color: black;">TM 265/350 Cabinet Liner Punching SPM</p>
+      </div>
 
-          <div class="swiper service-active-1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img src="assets/imgs/liner-1.png" alt="" style="height: 420px;" />
-                  </figure>
-                  <p style="color: black;">TM 265/350 Cabinet Liner Punching SPM</p>
-                </div>
-              </div>
+      <div class="service-slider-area p-relative">
+        <figure class="image w-img">
+          <img src="assets/imgs/liner-2.png" alt="" />
+        </figure>
+        <p style="color: black;">DC 220L Cabinet Liner Punching SPM</p>
+      </div>
 
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img src="assets/imgs/liner-2.png" alt="" />
-                  </figure>
-                  <p style="color: black;">DC 220L Cabinet Liner Punching SPM</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img src="assets/imgs/liner-3.png" alt="" style="height: 420px;" />
-                  </figure>
-                  <p style="color: black;">DC 195/205/225L Cabinet Liner Punching SPM</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img src="assets/imgs/liner-4.png" alt="" />
-                  </figure>
-                  <p style="color: black;">GEN-Y 190/200L Cabinet Liner Punching SPM</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img src="assets/imgs/liner-5.png" alt="" />
-                  </figure>
-                  <p style="color: black;">245L & 265L RC Cabinet Liner Punching SPM</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div class="service-slider-area p-relative">
+        <figure class="image w-img">
+          <img src="assets/imgs/liner-3.png" alt="" />
+        </figure>
+        <p style="color: black;">DC 195/205/225L Cabinet Liner Punching SPM</p>
+      </div>
+
+      <div class="service-slider-area p-relative">
+        <figure class="image w-img">
+          <img src="assets/imgs/liner6.png" alt="" />
+        </figure>
+        <p style="color: black;">GEN-Y 190/200L Cabinet Liner Punching SPM</p>
+      </div>
+
+      <div class="service-slider-area p-relative">
+        <figure class="image w-img">
+          <img src="assets/imgs/liner7.png" alt="" />
+        </figure>
+        <p style="color: black;">245L & 265L RC Cabinet Liner Punching SPM</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+<style>
+  .image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: start;
+}
+
+.image-grid .service-slider-area {
+  text-align: center;
+}
+
+/* .image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+} */
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+</style>
 
 
 
 
-      <section
+
+
+      <!-- <section
         class="service-slider-section section-space p-relative product-slider"
       >
         <div class="small-container">
@@ -862,7 +870,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
 
 
@@ -980,8 +988,9 @@
 
     <!-- Right Images -->
     <div class="spm-image">
-      <img src="assets/imgs/ref-door1.png" alt="SPM Machine" class="spm-img-images" />
-      <img src="assets/imgs/ref-door-2.png" alt="Refrigerator" class="spm-img second" />
+      <img src="assets/imgs/Refrigerator.png" alt="Refrigerator" class="" />
+      <!-- <img src="assets/imgs/ref-door1.png" alt="SPM Machine" class="spm-img-images" /> -->
+      <!-- <img src="assets/imgs/ref-door-2.png" alt="Refrigerator" class="spm-img second" /> -->
     </div>
   </div>
 </section>
@@ -998,118 +1007,74 @@
       </style>
 
 
-                  <section
-        class="service-slider-section section-space p-relative product-slider"
-      >
-        <div class="small-container">
-          <div class="row">
-            <!-- <div class="col-xxl-12">
-              <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
-                <h3 class="section-title mt-10">
-                  Door Foaming Jigs ( FC & RC )
-                </h3>
-              </div>
-            </div> -->
-            <!-- <div class="col-xxl-6 text-end mt-30">
-              <div class="common-slider-navigation">
-                <button class="service-1-button-prev">
-                  <i class="icon-arrow-left-angle"></i>
-                </button>
-                <button class="service-1-button-next">
-                  <i class="icon-arrow-right-angle"></i>
-                </button>
-              </div>
-            </div> -->
-          </div>
-
-          <div class="swiper service-active-1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/liner-6.png"
-                      alt=""
-                    />
-                  </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <p style="color: black;">245/265L RC/FC Door Liner Punching SPM</p>
-                  <!-- </div> -->
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/liner-7.png"
-                      alt=""
-                    />
-                  </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <p style="color: black;">GEN-Y 190L Door Liner Punching SPM</p>
-                  <!-- </div> -->
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/liner-8.png"
-                      alt="" 
-                    />
-                  </figure>
-                  <!-- <div class="content"> -->
-                    <!-- <h4>
-                      <a href="#">TM 265/350 Cabinet Liner Punching SPM</a>
-                    </h4> -->
-                    <p style="color: black;">Freezer Liner Punching SPM</p>
-                  <!-- </div> -->
-                </div>
-              </div>
-      
-              <!-- <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/products/door-foaming-jigs5.jpg"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-              </div> -->
-              <!-- <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/products/door-foaming-jigs6.jpg"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-              </div> -->
-              <!-- <div class="swiper-slide">
-                <div class="service-slider-area p-relative">
-                  <figure class="image w-img">
-                    <img
-                      src="assets/imgs/products/door-foaming-jigs7.jpg"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-              </div> -->
-
-              <!-- Add more slides as needed -->
-            </div>
-          </div>
+<section class="service-slider-section section-space p-relative product-slider">
+  <div class="small-container">
+    <div class="row">
+      <!-- <div class="col-xxl-12">
+        <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
+          <h3 class="section-title mt-10">Door Foaming Jigs ( FC & RC )</h3>
         </div>
-      </section>
+      </div> -->
+    </div>
+
+    <!-- Removed Swiper -->
+    <div class="service-static-grid">
+      <div class="service-slider-area p-relative">
+        <figure class="image w-img">
+          <img src="assets/imgs/liner-6.png" alt="245/265L RC/FC Door Liner Punching SPM" />
+        </figure>
+        <p style="color: black;">245/265L RC/FC Door Liner Punching SPM</p>
+      </div>
+
+      <div class="service-slider-area p-relative">
+        <figure class="image w-img">
+          <img src="assets/imgs/liner-7.png" alt="GEN-Y 190L Door Liner Punching SPM" />
+        </figure>
+        <p style="color: black;">GEN-Y 190L Door Liner Punching SPM</p>
+      </div>
+
+      <div class="service-slider-area p-relative">
+        <figure class="image w-img">
+          <img src="assets/imgs/liner-8.png" alt="Freezer Liner Punching SPM" />
+        </figure>
+        <p style="color: black;">Freezer Liner Punching SPM</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  .service-static-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.service-slider-area {
+  text-align: center;
+  flex: 1 1 300px;
+  max-width: 320px;
+}
+
+/* .service-slider-area img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+} */
+
+.service-slider-area img:hover {
+  transform: scale(1.05);
+}
+
+.service-slider-area p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+</style>
 
 
 
@@ -1444,7 +1409,9 @@
   }
 
   .spm-img.second {
-    width: 40%;
+   width: 55%;
+   /* margin-top: 15px; */
+   
   }
 }
 
@@ -1552,7 +1519,7 @@
 
     .spm-img-image {
     width: 123%;
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 6px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     object-fit: cover;
@@ -1662,7 +1629,8 @@
       <img src="assets/imgs/Bending2.png" alt="SPM Machine" class="spm-img" />
       <p class="spm-img-caption">Back Panel Bending SPM</p>
     </div>
-      <img src="assets/imgs/Bending1.png" alt="Refrigerator" class="spm-img second" />
+      <img src="assets/imgs/Bending1.png" alt="Refrigerator" class="spm-img second" style="width: 20%;
+        margin-top: 15px;" />
     </div>
   </div>
 </section>

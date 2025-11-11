@@ -367,291 +367,85 @@
 
 
       <!-- Banner area start -->
-      <section class="banner-section p-relative fix">
-        <div class="swiper banner-active">
-          <div class="swiper-wrapper">
-            <!-- block -->
-            <div class="swiper-slide">
-              <div
-                class="banner-main"
-                data-background="assets/website group photo/company_grp.JPG"
-                style="background-image: url('assets/website\ group\ photo/company_grp.JPG')"
-              ></div>
-              <div class="banner-shape-area">
-                <div
-                  class="shape-1"
-                  data-background="assets/imgs/shapes/shape-1.png"
-                ></div>
-                <div
-                  class="shape-2"
-                  data-background="assets/imgs/shapes/shape-2.png"
-                ></div>
-                <div
-                  class="shape-3"
-                  data-background="assets/imgs/shapes/shape-3.png"
-                ></div>
-                <div
-                  class="shape-4"
-                  data-background="assets/imgs/shapes/shape-4.png"
-                ></div>
-                <!-- <div
-                  class="shape-5"
-                  data-background="assets/imgs/shapes/shape-5.png"
-                ></div> -->
-              </div>
-            </div>
-            <!-- block -->
-            <div class="swiper-slide">
-              <div
-                class="banner-main"
-                data-background="assets/website group photo/company_grp.JPG"
-                style="background-image: url('assets/website\ group\ photo/company_grp.JPG')" 
-              >  
-                
-              </div>
-              <div class="banner-shape-area">
-                <div
-                  class="shape-1"
-                  data-background="assets/imgs/shapes/shape-1.png"
-                ></div>
-                <div
-                  class="shape-2"
-                  data-background="assets/imgs/shapes/shape-2.png"
-                ></div>
-                <div
-                  class="shape-3"
-                  data-background="assets/imgs/shapes/shape-3.png"
-                ></div>
-                <div
-                  class="shape-4"
-                  data-background="assets/imgs/shapes/shape-4.png"
-                ></div>
-                <!-- <div
-                  class="shape-5"
-                  data-background="assets/imgs/shapes/shape-5.png"
-                ></div> -->
-              </div>
-            </div>
-            <!-- block -->
-            <div class="swiper-slide">
-              <div
-                class="banner-main"
-                data-background="assets/website group photo/company_grp.JPG"
-                style="background-image: url('assets/website\ group\ photo/company_grp.JPG')"
-              >
-               
-              </div>
-              <div class="banner-shape-area">
-                <div
-                  class="shape-1"
-                  data-background="assets/imgs/shapes/shape-1.png"
-                ></div>
-                <div
-                  class="shape-2"
-                  data-background="assets/imgs/shapes/shape-2.png"
-                ></div>
-                <div
-                  class="shape-3"
-                  data-background="assets/imgs/shapes/shape-3.png"
-                ></div>
-                <div
-                  class="shape-4"
-                  data-background="assets/imgs/shapes/shape-4.png"
-                ></div>
-                <!-- <div
-                  class="shape-5"
-                  data-background="assets/imgs/shapes/shape-5.png"
-                ></div> -->
-              </div>
-            </div>
-            <!-- block -->
-          </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="banner-dot-inner">
-          <div class="banner-dot"></div>
-        </div>
-      </section>
+<section class="banner-section p-relative fix">
+  <div class="swiper banner-active">
+    <div class="swiper-wrapper">
+      <!-- Slide -->
+      <div class="swiper-slide">
+        <div
+          class="banner-main"
+          data-background="assets/website group photo/company_grp.JPG"
+          style="background-image: url('assets/website group photo/company_grp.JPG')"
+        ></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination Dots -->
+  <div class="banner-dot-inner">
+    <div class="banner-dot"></div>
+  </div>
+</section>
+
+<style>
+  .banner-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-main {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh; /* default desktop height */
+}
+
+/* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+  .banner-main {
+    height: 70vh;
+    background-position: center center;
+  }
+}
+
+/* Mobile View (up to 767px) */
+@media (max-width: 767px) {
+  .banner-main {
+    height: 50vh;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .banner-dot-inner {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .banner-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.8;
+  }
+}
+
+/* Very Small Screens (up to 480px) */
+@media (max-width: 480px) {
+  .banner-main {
+    height: 40vh;
+    background-position: top;
+  }
+}
+
+</style>
       <!-- Banner area end -->
 
-      <!-- <section class="features-section pt-80 pb-80 bg-color-1 p-relative">
-        <div
-          class="bg-shape-1"
-          data-background="assets/imgs/shapes/shape-27.png"
-          style="background-image: url('assets/imgs/shapes/shape-27.png')"
-        ></div>
-        <div
-          class="bg-shape-2"
-          data-background="assets/imgs/shapes/shape-28.png"
-          style="background-image: url('assets/imgs/shapes/shape-28.png')"
-        ></div>
-        <div class="small-container">
-          <div class="row g-4">
-            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
-              <div
-                class="features-box-area p-relative wow fadeInLeft"
-                data-wow-delay="500ms"
-                style="
-                  visibility: visible;
-                  animation-delay: 500ms;
-                  animation-name: fadeInLeft;
-                "
-              >
-                <div
-                  class="shape-1"
-                  data-background="assets/imgs/shapes/shape-24.png"
-                  style="
-                    background-image: url('assets/imgs/shapes/shape-24.png');
-                  "
-                ></div>
-                <div
-                  class="shape-2"
-                  data-background="assets/imgs/shapes/shape-25.png"
-                  style="
-                    background-image: url('assets/imgs/shapes/shape-25.png');
-                  "
-                ></div>
-                <div
-                  class="shape-3"
-                  data-background="assets/imgs/shapes/shape-26.png"
-                  style="
-                    background-image: url('assets/imgs/shapes/shape-26.png');
-                  "
-                ></div>
-                <div class="icon-box">
-                  <i class="fa fa-industry"></i>
-                </div>
-                <h5 class="mt-20 mb-10">
-                  <a href=""> Advanced Manufacturing</a>
-                </h5>
-                <p>
-                  Equipped with modern CNC, EDM, and injection molding machines
-                  to deliver precise and high-quality plastic components.
-                </p>
-              </div>
-            </div>
-   
-            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
-              <div class="features-box-area p-relative">
-                <div
-                  class="shape-1"
-                  data-background="assets/imgs/shapes/shape-24.png"
-                  style="
-                    background-image: url('assets/imgs/shapes/shape-24.png');
-                  "
-                ></div>
-                <div
-                  class="shape-2"
-                  data-background="assets/imgs/shapes/shape-25.png"
-                  style="
-                    background-image: url('assets/imgs/shapes/shape-25.png');
-                  "
-                ></div>
-                <div
-                  class="shape-3"
-                  data-background="assets/imgs/shapes/shape-26.png"
-                  style="
-                    background-image: url('assets/imgs/shapes/shape-26.png');
-                  "
-                ></div>
-                <div class="icon-box">
-                  <i class="fa fa-medal"></i>
-                </div>
-                <h5 class="mt-20 mb-10">
-                  <a href=""> Quality You Can Trust</a>
-                </h5>
-                <p>
-                  Every part undergoes a thorough and strict inspection process
-                  to ensure it meets all industry and customer standards.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
-              <div class="features-box-area p-relative">
-                <div
-                  class="shape-1"
-                  data-background="assets/imgs/shapes/shape-24.png"
-                  style="
-                    background-image: url('assets/imgs/shapes/shape-24.png');
-                  "
-                ></div>
-                <div
-                  class="shape-2"
-                  data-background="assets/imgs/shapes/shape-25.png"
-                  style="
-                    background-image: url('assets/imgs/shapes/shape-25.png');
-                  "
-                ></div>
-                <div
-                  class="shape-3"
-                  data-background="assets/imgs/shapes/shape-26.png"
-                  style="
-                    background-image: url('assets/imgs/shapes/shape-26.png');
-                  "
-                ></div>
-                <div class="icon-box">
-                  <i class="fa fa-users-cog"></i>
-                </div>
-                <h5 class="mt-20 mb-10">
-                  <a href=""> Expert Team</a>
-                </h5>
-                <p>
-                  Our skilled engineers and technicians bring years of
-                  experience to ensure accuracy and efficiency in production.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
-              <div
-                class="features-box-area p-relative wow fadeInRight"
-                data-wow-delay="500ms"
-                style="
-                  visibility: visible;
-                  animation-delay: 500ms;
-                  animation-name: fadeInRight;
-                "
-              >
-                <div
-                  class="shape-1"
-                  data-background="assets/imgs/shapes/shape-24.png"
-                  style="
-                    background-image: url('assets/imgs/shapes/shape-24.png');
-                  "
-                ></div>
-                <div
-                  class="shape-2"
-                  data-background="assets/imgs/shapes/shape-25.png"
-                  style="
-                    background-image: url('assets/imgs/shapes/shape-25.png');
-                  "
-                ></div>
-                <div
-                  class="shape-3"
-                  data-background="assets/imgs/shapes/shape-26.png"
-                  style="
-                    background-image: url('assets/imgs/shapes/shape-26.png');
-                  "
-                ></div>
-                <div class="icon-box">
-                  <i class="fa fa-lightbulb"></i>
-                </div>
-                <h5 class="mt-20 mb-10">
-                  <a href=""> Customer First</a>
-                </h5>
-                <p>
-                  We focus on building strong, long-term relationships through
-                  timely delivery, reliable service, and consistent product
-                  quality.
-                </p>
-              </div>
-            </div>
-   
-          </div>
-        </div>
-      </section> -->
-
+ 
       <!-- About us area start -->
 
       <section class="about-us-section section-space p-relative">
@@ -885,15 +679,15 @@
             <!-- block -->
             <div class="col-xxl-2 col-xl-2 col-lg-6 mb-15">
               <div class="blog-style-one">
-                <a class="blog-image w-img" href="">
+                <a class="blog-image w-img" href="production_equipments.html">
                   <img src="assets/imgs/production-equipment.png" alt="" />
                 </a>
                 <div class="blog-content service-slider-area">
                   <h5 class="blog-title mb-30">
-                    <a href="">Production Equipments SPM</a>
+                    <a href="production_equipments.html">Production Equipments SPM</a>
                   </h5>
                   <div class="blog-link">
-                    <a href="" class="service-btn"
+                    <a href="production_equipments.html" class="service-btn"
                       >Read More <i class="icon-arrow-right-double"></i
                     ></a>
                   </div>
@@ -904,15 +698,15 @@
             <!-- block -->
             <div class="col-xxl-2 col-xl-2 col-lg-6 mb-15">
               <div class="blog-style-one">
-                <a class="blog-image w-img" href="">
+                <a class="blog-image w-img" href="injection-moulds.html">
                   <img src="assets/imgs/injection-module.png" alt="" />
                 </a>
                 <div class="blog-content service-slider-area">
                   <h5 class="blog-title mb-30" style="margin-bottom: 52px;">
-                    <a href="">Injection Moulds</a>
+                    <a href="injection-moulds.html">Injection Moulds</a>
                   </h5>
                   <div class="blog-link">
-                    <a href="" class="service-btn"
+                    <a href="injection-moulds.html" class="service-btn"
                       >Read More <i class="icon-arrow-right-double"></i
                     ></a>
                   </div>
@@ -923,7 +717,7 @@
             <!-- block -->
                         <div class="col-xxl-2 col-xl-2 col-lg-6 mb-15">
               <div class="blog-style-one">
-                <a class="blog-image w-img" href="">
+                <a class="blog-image w-img" href="presstools.html">
                   <img src="assets/imgs/press-tool.png" alt="" />
                 </a>
                 <div class="blog-content service-slider-area">
@@ -931,7 +725,7 @@
                     <a href="presstools.html">Presstools</a>
                   </h5>
                   <div class="blog-link">
-                    <a href="" class="service-btn"
+                    <a href="presstools.html" class="service-btn"
                       >Read More <i class="icon-arrow-right-double"></i
                     ></a>
                   </div>
@@ -941,15 +735,15 @@
 
             <div class="col-xxl-2 col-xl-2 col-lg-6 mb-15">
               <div class="blog-style-one">
-                <a class="blog-image w-img" href="">
+                <a class="blog-image w-img" href="foaming_jigs.html">
                   <img src="assets/imgs/foaming-jigs.png" alt="" />
                 </a>
                 <div class="blog-content service-slider-area">
                   <h5 class="blog-title mb-30" style="margin-bottom: 52px;">
-                    <a href="">Foaming Jigs</a>
+                    <a href="foaming_jigs.html">Foaming Jigs</a>
                   </h5>
                   <div class="blog-link">
-                    <a href="" class="service-btn"
+                    <a href="foaming_jigs.html" class="service-btn"
                       >Read More <i class="icon-arrow-right-double"></i
                     ></a>
                   </div>
@@ -961,15 +755,15 @@
             <!-- block -->
             <div class="col-xxl-2 col-xl-2 col-lg-6 mb-15">
               <div class="blog-style-one">
-                <a class="blog-image w-img" href="">
+                <a class="blog-image w-img" href="testing_equipments.html">
                   <img src="assets/imgs/testing-equipment.png" alt="" />
                 </a>
                 <div class="blog-content service-slider-area">
                   <h5 class="blog-title mb-30">
-                    <a href="">Testing Equipments</a>
+                    <a href="testing_equipments.html">Testing Equipments</a>
                   </h5>
                   <div class="blog-link">
-                    <a href="" class="service-btn"
+                    <a href="testing_equipments.html" class="service-btn"
                       >Read More <i class="icon-arrow-right-double"></i
                     ></a>
                   </div>
@@ -980,15 +774,15 @@
             <!-- block -->
             <div class="col-xxl-2 col-xl-2 col-lg-6 mb-15">
               <div class="blog-style-one">
-                <a class="blog-image w-img" href="">
+                <a class="blog-image w-img" href="thermoforming_moulds.html">
                   <img src="assets/imgs/thermoforming-modul.png" alt="" />
                 </a>
                 <div class="blog-content service-slider-area">
                   <h5 class="blog-title mb-30">
-                    <a href="">Thermoforming Moulds</a>
+                    <a href="thermoforming_moulds.html">Thermoforming Moulds</a>
                   </h5>
                   <div class="blog-link">
-                    <a href="" class="service-btn"
+                    <a href="thermoforming_moulds.html" class="service-btn"
                       >Read More <i class="icon-arrow-right-double"></i
                     ></a>
                   </div>
@@ -1398,7 +1192,7 @@
     <!-- ===== Swiper Slider ===== -->
     <div class="swiper client-swiper">
       <div class="swiper-wrapper">
-        <!-- Each slide contains 6 logos (3x2 grid) -->
+        <!-- Slide 1 -->
         <div class="swiper-slide">
           <div class="logo-grid">
             <div class="logo-item"><img src="assets/imgs/whirlpool-corporation.png" alt="Whirlpool" /></div>
@@ -1410,25 +1204,34 @@
           </div>
         </div>
 
+        <!-- Slide 2 -->
         <div class="swiper-slide">
           <div class="logo-grid">
             <div class="logo-item"><img src="assets/imgs/voltas-beko.png" alt="Voltas Beko" /></div>
             <div class="logo-item"><img src="assets/imgs/starion.jpeg" alt="Starion" /></div>
             <div class="logo-item"><img src="assets/imgs/Carrier-Midea.jpg" alt="Carrier Midea" /></div>
-            <div class="logo-item"><img src="assets/imgs/IAC_Logo.jpg" alt="IAC" /></div>
+            <div class="logo-item"><img src="assets/imgs/rishaba-logo.png" alt="Rishaba" /></div>
             <div class="logo-item"><img src="assets/imgs/Uno-Minda.jpg" alt="Uno Minda" /></div>
             <div class="logo-item"><img src="assets/imgs/Varroc Engineering.jpg" alt="Varroc" /></div>
           </div>
         </div>
 
+        <!-- Slide 3 -->
         <div class="swiper-slide">
           <div class="logo-grid">
-            <div class="logo-item"><img src="assets/imgs/dura-a.jpeg" alt="Dura" /></div>
+            <div class="logo-item"><img src="assets/imgs/suprajit-logo.png" alt="Suprajit" /></div>
             <div class="logo-item"><img src="assets/imgs/aequs.jpg" alt="Aequs" /></div>
             <div class="logo-item"><img src="assets/imgs/BIORAD.avif" alt="Biorad" /></div>
             <div class="logo-item"><img src="assets/imgs/brisk.png" alt="Brisk" /></div>
             <div class="logo-item"><img src="assets/imgs/proks.png" alt="Proks" /></div>
             <div class="logo-item"><img src="assets/imgs/accurate.jpg" alt="Accurate" /></div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="logo-grid">
+            <div class="logo-item"><img src="assets/imgs/power_logo.png" alt="Power" /></div>
           </div>
         </div>
       </div>
@@ -1450,16 +1253,13 @@
       el: ".swiper-pagination",
       clickable: true,
     },
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
   });
 </script>
 
 <style>
+/* ===== Base Styles ===== */
 .trusted-clients-area {
-  padding: 35px 0;
+  padding: 40px 0;
   background-color: #fff;
 }
 
@@ -1470,55 +1270,52 @@
 }
 
 .heading-box {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .sub-title-text {
-    position: relative;
-    color: #fe0000;
-    font-family: var(--primary-font);
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 38px;
-    text-transform: uppercase;
+  color: #fe0000;
+  font-family: var(--primary-font, Arial, sans-serif);
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
+/* ===== Logo Grid ===== */
 .logo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
-  gap: 30px;
+  gap: 25px;
   justify-items: center;
   align-items: center;
 }
 
-
 .logo-item {
-    border: 1px solid #000000;
-    border-radius: -5px;
-    padding: 5px;
-    background-color: #ffffff;
-    transition: all 0.3s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 155px;
-    width: 56%;
+  border: 1px solid #000;
+  /* border-radius: 8px; */
+  padding: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 155px;
+  width: 60%;
 }
 
 .logo-item img {
   max-width: 100%;
-  max-height: 80px;
+  max-height: 110px;
   object-fit: contain;
 }
 
 .logo-item:hover {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
 }
 
-/* Pagination Dots */
+/* ===== Pagination Dots ===== */
 .swiper-pagination {
   margin-top: 20px;
   position: static;
@@ -1526,7 +1323,7 @@
 
 .swiper-pagination-bullet {
   background: #000;
-  opacity: 0.5;
+  opacity: 0.4;
   width: 10px;
   height: 10px;
 }
@@ -1538,65 +1335,58 @@
 
 /* ===== Responsive Design ===== */
 
-/* --- For Tablets --- */
+/* --- Tablet (max-width: 991px) --- */
 @media (max-width: 991px) {
-  .banner-main {
-    height: 70vh;
+  .sub-title-text {
+    font-size: 28px;
   }
 
-  .shape-1,
-  .shape-2,
-  .shape-3,
-  .shape-4,
-  .shape-5 {
-    width: 80px;
-    height: 80px;
-    opacity: 0.5;
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .logo-item {
+        width: 45%;
+        height: 135px;
   }
 }
 
-/* --- For Mobile Devices --- */
+/* --- Mobile (max-width: 767px) --- */
 @media (max-width: 767px) {
-  .banner-main {
-    height: 60vh;
+  .sub-title-text {
+    font-size: 26px;
   }
 
-  .shape-1,
-  .shape-2,
-  .shape-3,
-  .shape-4,
-  .shape-5 {
-    width: 50px;
-    height: 50px;
-    opacity: 0.4;
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
-  .shape-1 { top: 5%; left: 5%; }
-  .shape-2 { top: 10%; right: 5%; }
-  .shape-3 { bottom: 8%; left: 8%; }
-  .shape-4 { bottom: 5%; right: 5%; }
-  .shape-5 { display: none; } /* Optional – hide center shape on small screens */
-
-  .banner-dot-inner {
-    bottom: 15px;
+  .logo-item {
+width: 50%;
+        height: 130px;
   }
 }
 
-/* --- For Very Small Screens (below 480px) --- */
+/* --- Small Mobile (max-width: 480px) --- */
 @media (max-width: 480px) {
-  .banner-main {
-    height: 50vh;
+  .sub-title-text {
+    font-size: 22px;
   }
 
-  .shape-1,
-  .shape-2,
-  .shape-3,
-  .shape-4 {
-    width: 40px;
-    height: 40px;
+  .logo-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .logo-item {
+width: 55%;
+        height: 155px;
   }
 }
 </style>
+
 
 
 

@@ -194,7 +194,7 @@ ul {
 
 p {
   color: #595959;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 400;
   margin-bottom: 10px;
   line-height: 35px;
@@ -912,6 +912,7 @@ figure {
   only screen and (min-width: 576px) and (max-width: 767px) {
   .section-title {
     font-size: 32px !important;
+    text-align: center;
   }
   .section-title br {
     display: none;
@@ -2622,12 +2623,12 @@ ul.footer-contact-info-widget .icon {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(16, 32, 57, 0.9) 0%,
     rgba(11, 21, 38, 0.6) 56.25%,
     rgba(0, 0, 0, 0) 97.81%
-  );
+  ); */
 }
 
 .banner-area {
@@ -6399,7 +6400,7 @@ ul.about-3-list li:before {
 
 .breadcrumb__wrapper .breadcrumb__title {
       color: #fff;
-    font-size: 40px;
+    font-size: 55px;
     text-align: center;
 }
 
