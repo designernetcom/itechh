@@ -332,49 +332,100 @@
     </div>
 
     <!-- Static Image Display -->
-    <div class="static-image-gallery">
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Stage1.png" alt="Stage 1" />
-        </figure>
-      </div>
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Stage2.png" alt="Stage 2" />
-        </figure>
-      </div>
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Stage3.png" alt="Stage 3" />
-        </figure>
-      </div>
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Stage4.png" alt="Stage 4" />
-        </figure>
-      </div>
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Stage5.png" alt="Stage 5" />
-        </figure>
-      </div>
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Stage6.png" alt="Stage 6" />
-        </figure>
-      </div>
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Stage7.png" alt="Stage 7" />
-        </figure>
-      </div>
-    </div>
+<div class="stage-gallery">
+  <div class="stage-card p-relative">
+    <figure class="stage-image w-img">
+      <img src="assets/imgs/Stage Tool/Picture36.jpg" alt="Stage 1" style="height: 200px;" />
+    </figure>
+  </div>
+  <div class="stage-card p-relative">
+    <figure class="stage-image w-img">
+      <img src="assets/imgs/Stage Tool/Picture35.jpg" alt="Stage 2" style="height: 200px;" />
+    </figure>
+  </div>
+  <div class="stage-card p-relative">
+    <figure class="stage-image w-img">
+      <img src="assets/imgs/Stage Tool/Picture34.jpg" alt="Stage 3" style="height: 200px;" />
+    </figure>
+  </div>
+  <div class="stage-card p-relative">
+    <figure class="stage-image w-img">
+      <img src="assets/imgs/Stage Tool/Picture33.jpg" alt="Stage 4" style="height: 200px;" />
+    </figure>
+  </div>
+  <div class="stage-card p-relative">
+    <figure class="stage-image w-img">
+      <img src="assets/imgs/Stage Tool/Picture32.jpg" alt="Stage 5" style="height: 200px;" />
+    </figure>
+  </div>
+  <div class="stage-card p-relative">
+    <figure class="stage-image w-img">
+      <img src="assets/imgs/Stage Tool/Picture37.jpg" alt="Stage 6" style="height: 200px;" />
+    </figure>
+  </div>
+</div>
+
+
+
   </div>
 </section>
 
 
 
+
+
       <style>
+
+.stage-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 57px;
+    padding: 50px;
+  justify-items: center; /* center smaller images */
+}
+
+.stage-gallery .stage-card {
+  overflow: hidden;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* transition: transform 0.3s ease; */
+  max-width: 500px; /* smaller width for each card */
+}
+
+.stage-gallery .stage-card:hover {
+  transform: scale(1.03);
+}
+
+.stage-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  /* border-radius: 10px; */
+}
+
+/* ✅ Tablet View (2 columns) */
+@media (max-width: 992px) {
+  .stage-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ✅ Mobile View (1 column) */
+@media (max-width: 576px) {
+  .stage-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .stage-gallery .stage-card {
+    max-width: 90%; /* take more width on small screens */
+  }
+}
+
+
+
+
+
 
 .static-image-gallery {
   display: flex;
@@ -477,89 +528,125 @@
     </div>
 
     <!-- Static images (no Swiper) -->
-    <div class="static-image-gallery">
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Progressive1.png" alt="" />
-        </figure>
+<section class="progressive-gallery-section">
+  <div class="container">
+    <div class="progressive-grid">
+      <div class="progressive-card">
+        <img src="assets/imgs/Progressive Tool/Picture39.jpg" alt="Progressive Tool 1" />
+      </div>
+      <div class="progressive-card">
+        <img src="assets/imgs/Progressive Tool/Picture40.jpg" alt="Progressive Tool 2" style="height: 241px;" />
+      </div>
+      <div class="progressive-card">
+        <img src="assets/imgs/Progressive Tool/Picture41.jpg" alt="Progressive Tool 3" style="height: 241px;" />
+      </div>
+      <div class="progressive-card">
+        <img src="assets/imgs/Progressive Tool/Picture42.jpg" alt="Progressive Tool 4" style="height: 241px;"/>
+      </div>
+      <div class="progressive-card">
+        <img src="assets/imgs/Progressive Tool/Picture43.jpg" alt="Progressive Tool 5" />
+      </div>
+      <!-- <div class="progressive-card">
+        <img src="assets/imgs/Progressive Tool/Picture44.jpg" alt="Progressive Tool 6" />
+      </div> -->
+      <div class="progressive-card">
+        <img src="assets/imgs/Progressive Tool/Picture45.jpg" alt="Progressive Tool 7" style="height: 241px;
+    border: 2px solid #707070;
+    background-color: #d6d6d6;" />
       </div>
 
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Progressive2.png" alt="" />
-        </figure>
-      </div>
 
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Progressive3.png" alt="" />
-        </figure>
+      <!-- <div class="progressive-card">
+        <img src="assets/imgs/Progressive Tool/Picture46.jpg" alt="Progressive Tool 8" />
       </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Progressive4.png" alt="" />
-        </figure>
+      <div class="progressive-card">
+        <img src="assets/imgs/Progressive Tool/Picture47.png" alt="Progressive Tool 9" />
       </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Progressive5.png" alt="" />
-        </figure>
+      <div class="progressive-card">
+        <img src="assets/imgs/Progressive Tool/Picture48.jpg" alt="Progressive Tool 10" />
       </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Progressive6.png" alt="" />
-        </figure>
+      <div class="progressive-card">
+        <img src="assets/imgs/Progressive Tool/Picture49.jpg" alt="Progressive Tool 11" />
       </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Progressive7.png" alt="" />
-        </figure>
+      <div class="progressive-card">
+        <img src="assets/imgs/Progressive Tool/Picture50.jpg" alt="Progressive Tool 12" />
       </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Progressive8.png" alt="" />
-        </figure>
-      </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Progressive9.png" alt="" />
-        </figure>
-      </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Progressive10.png" alt="" />
-        </figure>
-      </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Progressive11.png" alt="" />
-        </figure>
-      </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Progressive12.png" alt="" />
-        </figure>
-      </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Progressive13.png" alt="" />
-        </figure>
-      </div>
+      <div class="progressive-card">
+        <img src="assets/imgs/Progressive Tool/Picture51.jpg" alt="Progressive Tool 13" />
+      </div> -->
     </div>
+          <div class="progressive-card">
+        <img src="assets/imgs/jigs_moulds.jpeg" alt="Progressive Tool 7" />
+      </div>
+  </div>
+</section>
+
   </div>
 </section>
 
 <style>
+
+/* .progressive-gallery-section {
+  padding: 60px 0;
+  background-color: #fff;
+} */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.progressive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-right: 50px;
+}
+
+/* .progressive-card {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+/* .progressive-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+} */
+
+.progressive-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Responsive Design ===== */
+
+/* Tablets (2 columns) */
+@media (max-width: 992px) {
+  .progressive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile (1 column) */
+@media (max-width: 600px) {
+  .progressive-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
   .static-image-gallery {
   /* display: grid; */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

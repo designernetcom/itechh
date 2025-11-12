@@ -491,50 +491,120 @@
 
 
 
-<section class="service-slider-section section-space p-relative product-slider">
-  <div class="small-container">
-    <div class="row">
-      <div class="col-xxl-12">
-        <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
-          <h3 class="section-title mt-10">Cabinet Thermoforming Moulds</h3>
-        </div>
-      </div>
+<div class="thermoforming-gallery">
+  <!-- Left side: 3 larger images -->
+  <div class="left-column">
+    <div class="progressive-card">
+      <figure class="progressive-grid">
+        <img src="assets/imgs/Thermoforming1.png" alt="Thermoforming 1" />
+      </figure>
     </div>
-
-    <!-- Removed Swiper -->
-    <div class="service-static-grid">
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Thermoforming1.png" alt="Thermoforming 1" />
-        </figure>
-      </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Thermoforming2.png" alt="Thermoforming 2" />
-        </figure>
-      </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Thermoforming3.png" alt="Thermoforming 3" />
-        </figure>
-      </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Thermoforming4.png" alt="Thermoforming 4" />
-        </figure>
-      </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/Thermoforming5.png" alt="Thermoforming 5" />
-        </figure>
-      </div>
+    <div class="progressive-card">
+      <figure class="progressive-grid">
+        <img src="assets/imgs/Thermoforming2.png" alt="Thermoforming 2" />
+      </figure>
+    </div>
+    <div class="progressive-card">
+      <figure class="progressive-grid">
+        <img src="assets/imgs/Thermoforming3.png" alt="Thermoforming 3" />
+      </figure>
     </div>
   </div>
-</section>
+
+  <!-- Right side: 2 smaller images -->
+  <div class="right-column">
+    <div class="progressive-card small">
+      <figure class="progressive-grid">
+        <img src="assets/imgs/Thermoforming4.png" alt="Thermoforming 4" />
+      </figure>
+    </div>
+    <div class="progressive-card small">
+      <figure class="progressive-grid">
+        <img src="assets/imgs/Thermoforming5.png" alt="Thermoforming 5" />
+      </figure>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Outer layout */
+.thermoforming-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; /* space between columns */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+/* Left column (3 images) */
+.left-column {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  flex: 1.2;
+}
+
+/* Right column (2 smaller images) */
+.right-column {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  flex: 0.8;
+}
+
+/* Base image styling */
+.progressive-grid img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 10px; */
+  border: 2px solid #474747;
+  background: #fff;
+  /* padding: 5px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Right-side smaller image scaling */
+.progressive-card.small img {
+  /* transform: scale(0.85); */
+  transition: transform 0.3s ease;
+}
+
+.progressive-card.small img:hover {
+  transform: scale(0.9);
+}
+
+/* Hover effect (all images) */
+.progressive-grid img:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Responsive design */
+@media (max-width: 992px) {
+  .thermoforming-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-column,
+  .right-column {
+    grid-template-rows: unset;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 90%;
+  }
+
+  .progressive-card.small img {
+    transform: scale(1);
+  }
+}
+</style>
+
+
+
 
 
 
@@ -556,15 +626,15 @@
     <div class="service-static-grid">
       <div class="service-item">
         <figure class="image w-img">
-          <img src="assets/imgs/Thermoforming6.png" alt="Thermoforming Mould 1" />
+          <img src="assets/imgs/Thermoforming6.png" alt="Thermoforming Mould 1" style="height: 360px;" />
         </figure>
       </div>
 
-      <div class="service-item">
+      <!-- <div class="service-item">
         <figure class="image w-img">
           <img src="assets/imgs/Thermoforming7.png" alt="Thermoforming Mould 2" />
         </figure>
-      </div>
+      </div> -->
 
       <div class="service-item">
         <figure class="image w-img">
@@ -586,7 +656,7 @@
 
 .service-item {
   flex: 1 1 300px;
-  max-width: 350px;
+  /* max-width: 350px; */
   text-align: center;
 }
 

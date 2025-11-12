@@ -2610,7 +2610,7 @@ ul.footer-contact-info-widget .icon {
 /*----------------------------------------*/
 
 .banner-main {
-  padding: 210px 0px;
+  padding: 240px 0px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2919,7 +2919,7 @@ p.banner-text {
 
 @media only screen and (max-width: 767px) {
   .banner-main {
-    padding: 120px 0px;
+    padding: 75px 0px;
   }
 
   .banner-area {
@@ -7973,6 +7973,7 @@ Animate wobble-vertical
     width: 90% !important;
     height: 100%;
     max-width: 120%;
+    margin-bottom: 22px;
 }
 .choose-section {
   padding-bottom: 50px;

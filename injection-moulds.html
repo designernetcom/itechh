@@ -133,7 +133,7 @@
                   <div class="main-menu">
                     <nav id="mobile-menu">
                       <ul>
-                        <li class="has-dropdown active">
+                        <li class="has-dropdown">
                           <a href="index.html">Home</a>
                         </li>
                         <li>
@@ -183,7 +183,7 @@
                             </li> -->
                           </ul>
                         </li>
-                        <li class="has-dropdown">
+                        <li class="has-dropdown active">
                           <a href="foaming_jigs.html">Our Products</a>
                           <ul class="submenu">
                             <li class="has-dropdown">
@@ -386,7 +386,7 @@
     <div class="moulds-gallery">
       <figure class="image w-img"><img src="assets/imgs/Moulds1.png" alt=""></figure>
       <figure class="image w-img"><img src="assets/imgs/Moulds2.png" alt=""></figure>
-      <figure class="image w-img"><img src="assets/imgs/Moulds3.png" alt=""></figure>
+      <figure class="image w-img"><img src="assets/imgs/Moulds3.png" alt="" style="height: 200px;"></figure>
       <figure class="image w-img"><img src="assets/imgs/Moulds4.png" alt=""></figure>
       <figure class="image w-img"><img src="assets/imgs/Moulds5.png" alt=""></figure>
       <figure class="image w-img"><img src="assets/imgs/Moulds6.png" alt=""></figure>
@@ -407,6 +407,8 @@
       <figure class="image w-img"><img src="assets/imgs/Moulds21.png" alt=""></figure>
       <figure class="image w-img"><img src="assets/imgs/Moulds22.png" alt=""></figure>
       <figure class="image w-img"><img src="assets/imgs/Moulds23.png" alt=""></figure>
+      <figure class="image w-img"><img src="assets/imgs/products/toy7.jpg" alt=""></figure>
+      <figure class="image w-img"><img src="assets/imgs/products/toy8.jpg" alt=""></figure>
     </div>
   </div>
 </section>
@@ -444,13 +446,13 @@
 
 
 
-<section class="service-slider-section section-space p-relative product-slider">
+<!-- <section class="service-slider-section section-space p-relative product-slider">
   <div class="small-container">
     <div class="row">
-      <!-- Title can be added back here if needed -->
+
     </div>
 
-    <!-- Static Image Display (No Slider) -->
+
     <div class="static-image-grid">
       <div class="service-slider-area p-relative">
         <figure class="image-images w-img">
@@ -544,7 +546,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 
@@ -729,17 +731,8 @@
       </section> -->
       
       
-<section class="service-slider-section section-space p-relative product-slider">
+<!-- <section class="service-slider-section section-space p-relative product-slider">
   <div class="small-container">
-    <!-- Optional title (uncomment if needed)
-    <div class="row">
-      <div class="col-xxl-12">
-        <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
-          <h3 class="section-title mt-10">Injection Moulds for Toys</h3>
-        </div>
-      </div>
-    </div>
-    -->
 
     <div class="image-grid">
       <div class="service-slider-area p-relative">
@@ -805,20 +798,132 @@
 
     </div>
   </div>
-</section>
+</section> -->
 
-<div class="image-grid">
+<!-- <div class="image-grid">
   <div class="p-relative">
     <figure class="">
-      <img src="assets/imgs/toy-toy.png" alt="Toy" style="    width: 100%;
+      <img src="assets/imgs/toy-toy.png" alt="Toy" style="margin-left: 51px;
+    width: 93%; height: 500px;
     margin-bottom: 10px;"/>
     </figure>
   </div>
-</div>
+</div> -->
+<section class="toy-gallery-section">
+  <div class="toy-gallery-container">
+    <div class="toy-gallery-item">
+      <figure class="toy-image-wrapper">
+        <img src="assets/imgs/toy-toy.png" alt="Toy" class="toy-image" />
+      </figure>
+    </div>
+  </div>
+</section>
+
 
 
 
       <style>
+        /* --- Base Layout --- */
+.toy-gallery-section {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.toy-gallery-container {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.toy-gallery-item {
+  /* width: 100%;
+  max-width: 800px; */
+  margin-left: 51px;
+    width: 93%; 
+    height: 500px;
+    margin-bottom: -17px;
+}
+
+.toy-image-wrapper {
+  display: block;
+  margin: 0 auto;
+}
+
+.toy-image {
+  width: 100%;
+  height: 500px;
+  /* border-radius: 8px; */
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Responsive Design --- */
+
+/* Tablets (up to 1024px) */
+@media (max-width: 1024px) {
+  .toy-gallery-section {
+    padding: 30px 15px;
+  }
+
+  .toy-image {
+    max-height: 400px;
+  }
+
+  .toy-gallery-item {
+  /* width: 100%;
+  max-width: 800px; */
+  margin-left: 30px;
+    width: 93%; 
+    height: 500px;
+    margin-bottom: 200px;
+    margin-bottom: -115px;
+        margin-top: -77px;
+}
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+  .toy-gallery-section {
+    padding: 20px 10px;
+  }
+
+  .toy-image {
+    max-height: 350px;
+  }
+
+  .toy-gallery-item {
+  /* width: 100%;
+  max-width: 800px; */
+        margin-left: 18px;
+        width: 93%;
+        height: 500px;
+        margin-top: -60px;
+                margin-bottom: -163px;
+}
+}
+
+/* Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .toy-gallery-section {
+    padding: 15px 5px;
+  }
+
+  .toy-image {
+    max-height: 280px;
+    /* border-radius: 6px; */
+  }
+
+  .toy-gallery-item {
+  /* width: 100%;
+  max-width: 800px; */
+margin-left: 17px;
+        width: 90%;
+        height: 500px;
+        margin-bottom: -220px;
+        margin-top: -45px;
+}
+}
+
 
 
 .image-grid {

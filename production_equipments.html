@@ -495,7 +495,7 @@
 
 /* Container setup */
 .spm-section {
-  padding: 60px 20px;
+  /* padding: 60px 20px; */
   background-color: #fff;
 }
 
@@ -742,60 +742,161 @@
 
 
 
-<section class="service-slider-section section-space p-relative product-slider">
-  <div class="small-container">
-    <div class="image-grid">
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/liner1.png" alt="" />
+<section class="cabinet-punching-section section-space p-relative">
+  <div class="container">
+    <div class="cabinet-image-grid">
+      <div class="cabinet-card p-relative">
+        <figure class="cabinet-img">
+          <img src="assets/imgs/Cabinet Liner Punching SPM/Picture1.png" alt="TM 265/350 Cabinet Liner Punching SPM" />
         </figure>
-        <p style="color: black;">TM 265/350 Cabinet Liner Punching SPM</p>
+        <p>TM 265/350 Cabinet Liner Punching SPM</p>
       </div>
 
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/liner-2.png" alt="" />
+      <div class="cabinet-card p-relative">
+        <figure class="cabinet-img">
+          <img src="assets/imgs/Cabinet Liner Punching SPM/Picture2.png" alt="DC 220L Cabinet Liner Punching SPM" style="height: 330px;" />
         </figure>
-        <p style="color: black;">DC 220L Cabinet Liner Punching SPM</p>
+        <p>DC 220L Cabinet Liner Punching SPM</p>
       </div>
 
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/liner-3.png" alt="" />
+      <div class="cabinet-card p-relative">
+        <figure class="cabinet-img">
+          <img src="assets/imgs/Cabinet Liner Punching SPM/Picture3.png" alt="DC 195/205/225L Cabinet Liner Punching SPM" />
         </figure>
-        <p style="color: black;">DC 195/205/225L Cabinet Liner Punching SPM</p>
+        <p>DC 195/205/225L Cabinet Liner Punching SPM</p>
       </div>
 
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/liner6.png" alt="" />
+      <div class="cabinet-card p-relative">
+        <figure class="cabinet-img">
+          <img src="assets/imgs/Cabinet Liner Punching SPM/Picture4.jpg" alt="GEN-Y 190/200L Cabinet Liner Punching SPM" />
         </figure>
-        <p style="color: black;">GEN-Y 190/200L Cabinet Liner Punching SPM</p>
-      </div>
-
-      <div class="service-slider-area p-relative">
-        <figure class="image w-img">
-          <img src="assets/imgs/liner7.png" alt="" />
-        </figure>
-        <p style="color: black;">245L & 265L RC Cabinet Liner Punching SPM</p>
+        <p>GEN-Y 190/200L Cabinet Liner Punching SPM</p>
       </div>
     </div>
   </div>
 </section>
+<style>
+  .cabinet-punching-section {
+  padding: 60px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cabinet-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.cabinet-card {
+  text-align: center;
+  /* background: #fff; */
+  /* border-radius: 12px; */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cabinet-card:hover {
+  transform: translateY(-5px);
+  /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12); */
+}
+
+/* .cabinet-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
+.cabinet-card p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #222;
+  padding: 10px 15px 15px;
+}
+
+/* Tablet view */
+@media (max-width: 992px) {
+  .cabinet-image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .cabinet-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .cabinet-image-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .cabinet-card {
+    border-radius: 10px;
+  }
+}
+
+</style>
+
 
 
 <style>
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns on desktop */
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+}
+
+.service-slider-area {
+  text-align: center;
+}
+
+.service-slider-area img {
+  width: 100% !important;
+  max-width: 350px !important;
+  height: auto !important;
+  /* border-radius: 8px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-slider-area p {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* ✅ Responsive: 1 column on mobile/tablet */
+@media (max-width: 768px) {
   .image-grid {
+    grid-template-columns: 1fr; /* single column */
+  }
+}
+
+
+
+
+  /* .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   justify-items: center;
   align-items: start;
-}
+} */
 
-.image-grid .service-slider-area {
+/* .image-grid .service-slider-area {
   text-align: center;
-}
+} */
 
 /* .image-grid img {
   width: 100%;
@@ -804,9 +905,9 @@
   transition: transform 0.3s ease;
 } */
 
-.image-grid img:hover {
+/* .image-grid img:hover {
   transform: scale(1.05);
-}
+} */
 
 </style>
 
@@ -1512,15 +1613,15 @@
     .spm-imgs {
     width: 123%;
     max-width: 550px;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     object-fit: cover;
 }
 
     .spm-img-image {
     width: 123%;
-    max-width: 500px;
-    border-radius: 6px;
+    /* max-width: 500px; */
+    /* border-radius: 6px; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     object-fit: cover;
 }
