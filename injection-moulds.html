@@ -1121,6 +1121,82 @@ margin-left: 17px;
     </style>
     <!-- Footer area end -->
 
+
+    <!-- ===== Download Brochure Section ===== -->
+<section class="elementor-section elementor-top-section elementor-element elementor-element-4199acf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4199acf" data-element_type="section">
+  <div class="elementor-container elementor-column-gap-default">
+    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c6cc161" data-id="c6cc161" data-element_type="column">
+      <div class="elementor-widget-wrap elementor-element-populated">
+        <div class="elementor-element elementor-element-041cb31 elementor-widget elementor-widget-button" data-id="041cb31" data-element_type="widget" data-widget_type="button.default">
+          <div class="elementor-widget-container">
+            <div class="elementor-button-wrapper">
+              <a class="elementor-button elementor-button-link elementor-size-sm" href="download_broucher.html">
+                <span class="elementor-button-content-wrapper">
+                  <span class="elementor-button-text">Download Brochure</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ===== Vertical Side Download Brochure Button ===== */
+.elementor-element-041cb31 {
+  position: fixed !important;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.elementor-button {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 14px 0;
+  border-radius: 6px 0 0 6px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  writing-mode: vertical-rl;   /* Makes text vertical */
+  text-orientation: mixed;     /* Keeps letters upright */
+  /* transform: rotate(180deg);    */
+  /* Makes text readable from bottom to top */
+}
+
+.elementor-button:hover {
+  background-color: #030303;
+  padding: 18px 0;
+  color: #ffffff;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .elementor-element-041cb31 {
+    top: auto;
+    bottom: 20px;
+    right: 10px;
+    transform: none;
+  }
+
+  .elementor-button {
+    writing-mode: horizontal-tb;
+    transform: none;
+    border-radius: 50px;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+</style>
+
+
+
     <!-- JS here -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
